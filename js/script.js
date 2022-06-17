@@ -116,6 +116,26 @@ function мenuBurger() {
 }
 мenuBurger()
 
+//< " ПОИСКОВОЙ ЗАПРОС ПО КЛИКУ НА КНОПКУ " >=============================================================================================================>//
+function showSearch() {
+	const searchOpen = document.querySelector(".header-search__open");
+	const searchBody = document.querySelector(".header-search__item");
+
+	searchOpen.addEventListener("click", function () {
+		searchBody.classList.toggle('_active');
+	});
+
+	document.addEventListener("click", function (e) {
+		const elementTarget = e.target;
+
+		if (!elementTarget.closest(".header-search") && searchBody.classList.contains('_active')) {
+			searchBody.classList.remove('_active');
+			searchOpen.style.display = "flex";
+		}
+	});
+}
+showSearch()
+
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
