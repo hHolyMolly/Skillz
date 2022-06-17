@@ -225,6 +225,12 @@ body._lock-scroll {
   background-color: #2A2A2A;
 }
 
+@media (max-width: 768.2px) {
+  .banner__wrapper {
+    display: none;
+  }
+}
+
 .banner__body {
   min-height: 47px;
   display: -webkit-box;
@@ -385,6 +391,7 @@ body._lock-scroll {
 }
 
 .header__body {
+  /* Если меньше контейнера */
   min-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,15 +404,39 @@ body._lock-scroll {
           align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .header__body {
+    min-height: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+
 .header__logo {
   /* Если меньше контейнера */
   margin-right: 45px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  /* Если меньше контейнера */
+  -ms-flex-preferred-size: 118px;
+      flex-basis: 118px;
 }
 
 @media (max-width: 1200px) {
   .header__logo {
     margin-right: calc(10px + 35 * ((100vw - 320px) / 880));
   }
+}
+
+@media (max-width: 1200px) {
+  .header__logo {
+    -ms-flex-preferred-size: calc(80px + 38 * ((100vw - 320px) / 880));
+        flex-basis: calc(80px + 38 * ((100vw - 320px) / 880));
+  }
+}
+
+.header__logo img {
+  max-width: 100%;
 }
 
 .header__location {
@@ -1108,14 +1139,14 @@ body._lock-scroll {
   z-index: 500;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity .3s ease 0s;
-  transition: opacity .3s ease 0s;
+  -webkit-transition: opacity .5s ease 0s;
+  transition: opacity .5s ease 0s;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header-menu__wrapper._active {
   opacity: 1;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .header-menu__body {
@@ -1123,11 +1154,17 @@ body._lock-scroll {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 600;
   -webkit-box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.7);
+  -webkit-transition: left .5s ease .0s;
+  transition: left .5s ease .0s;
   background-color: #fff;
+}
+
+.header-menu__body._active {
+  left: 0;
 }
 
 .header-menu__top {

@@ -91,6 +91,31 @@ function userShow() {
 }
 userShow()
 
+//< " МЕНЮ БУРГЕР " >=============================================================================================================>//
+function мenuBurger() {
+	const menuBody = document.querySelector(".header-menu__body");
+	const menuWrapper = document.querySelector(".header-menu__wrapper");
+
+	const body = document.body;
+
+	document.addEventListener("click", function (e) {
+		const elementTarget = e.target;
+
+		if (elementTarget.closest(".header-menu__burger")) {
+			menuBody.classList.add("_active");
+			menuWrapper.classList.add("_active");
+			body.classList.add("_lock-scroll");
+		}
+
+		if (elementTarget.closest(".header-menu__wrapper") || elementTarget.closest(".header-menu__close") || elementTarget.closest(".header-menu__logo")) {
+			menuBody.classList.remove("_active");
+			menuWrapper.classList.remove("_active");
+			body.classList.remove("_lock-scroll");
+		}
+	});
+}
+мenuBurger()
+
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
