@@ -48,46 +48,29 @@ select()
 //< " ВЫПАДАЮЩИЙ СПИСОК ПОЛЬЗОВАТЕЛЯ " >=============================================================================================================>//
 function userShow() {
 	const userBtn = document.querySelector(".header-user__dropdown");
-	const userClose = document.querySelector(".header-user__close");
 	const userBody = document.querySelector(".header-user__body");
 
-	const pcShow = function () {
-		userBtn.addEventListener("click", function () {
-			userBtn.classList.toggle("_active");
-			userBody.classList.toggle("_active");
-		});
+	userBtn.addEventListener("click", function () {
+		userBtn.classList.toggle("_active");
+		userBody.classList.toggle("_active");
+	});
 
-		document.addEventListener("click", function (e) {
-			const elementTarget = e.target;
+	document.addEventListener("click", function (e) {
+		const elementTarget = e.target;
 
-			if (userBtn.classList.contains("_active") && userBody.classList.contains("_active") && !elementTarget.closest(".header__user")) {
-				userBtn.classList.remove("_active");
-				userBody.classList.remove("_active");
-			}
-		});
-
-		document.addEventListener("keyup", function (e) {
-			if (e.code === "Escape") {
-				userBtn.classList.remove("_active");
-				userBody.classList.remove("_active");
-			}
-		});
-	}
-
-	const mobileShow = function () {
-		userBtn.addEventListener("click", function () {
-			userBody.classList.add("_active");
-		});
-		userClose.addEventListener("click", function () {
+		if (userBtn.classList.contains("_active") && userBody.classList.contains("_active") && !elementTarget.closest(".header-action__user")
+			|| elementTarget.closest(".header-user__close")) {
+			userBtn.classList.remove("_active");
 			userBody.classList.remove("_active");
-		});
-	}
+		}
+	});
 
-	if (window.innerWidth > 768.2) {
-		pcShow()
-	} else {
-		mobileShow()
-	}
+	document.addEventListener("keyup", function (e) {
+		if (e.code === "Escape") {
+			userBtn.classList.remove("_active");
+			userBody.classList.remove("_active");
+		}
+	});
 }
 userShow()
 
@@ -128,13 +111,33 @@ function showSearch() {
 	document.addEventListener("click", function (e) {
 		const elementTarget = e.target;
 
-		if (!elementTarget.closest(".header-search") && searchBody.classList.contains('_active')) {
+		if (!elementTarget.closest(".header-search") && searchBody.classList.contains('_active') && window.innerWidth < 552.2) {
 			searchBody.classList.remove('_active');
 			searchOpen.style.display = "flex";
 		}
 	});
 }
 showSearch()
+
+//< " ДОБАВЛЕНИЕ КЛАССА ХЕДЕРУ ПРИ СКРОЛЛЕ " >=============================================================================================================>//
+function scrollHeader() {
+
+	const header = document.querySelector('.header');
+
+	const callback = function (entries, observer) {
+		if (entries[0].isIntersecting) {
+			header.classList.remove('_scroll');
+		} else {
+			header.classList.add('_scroll');
+		}
+	};
+
+	const headerObserver = new IntersectionObserver(callback);
+	headerObserver.observe(header);
+
+}
+scrollHeader()
+
 
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {

@@ -384,10 +384,52 @@ body._lock-scroll {
   }
 }
 
+@media (min-width: 768.2px) {
+  .header._scroll .header__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-name: scrollAnimation;
+            animation-name: scrollAnimation;
+  }
+  @-webkit-keyframes scrollAnimation {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @keyframes scrollAnimation {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+}
+
 .header__wrapper {
-  background-color: #fff;
+  width: 100%;
   -webkit-box-shadow: 0px 1px 0px #CECECE;
           box-shadow: 0px 1px 0px #CECECE;
+  background-color: #fff;
+}
+
+@media (max-width: 768.2px) {
+  .header__wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 .header__body {
@@ -421,6 +463,9 @@ body._lock-scroll {
   /* Если меньше контейнера */
   -ms-flex-preferred-size: 118px;
       flex-basis: 118px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media (max-width: 1200px) {
@@ -431,8 +476,8 @@ body._lock-scroll {
 
 @media (max-width: 1200px) {
   .header__logo {
-    -ms-flex-preferred-size: calc(100px + 18 * ((100vw - 320px) / 880));
-        flex-basis: calc(100px + 18 * ((100vw - 320px) / 880));
+    -ms-flex-preferred-size: calc(90px + 28 * ((100vw - 320px) / 880));
+        flex-basis: calc(90px + 28 * ((100vw - 320px) / 880));
   }
 }
 
@@ -443,6 +488,9 @@ body._lock-scroll {
 .header__location {
   /* Если меньше контейнера */
   margin-right: 35px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media (max-width: 1200px) {
@@ -459,6 +507,9 @@ body._lock-scroll {
   .header__search {
     /* Если меньше контейнера */
     margin-right: 15px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -470,8 +521,8 @@ body._lock-scroll {
 
 .header__action {
   /* Если меньше контейнера */
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,91 +533,24 @@ body._lock-scroll {
 
 @media (max-width: 1200px) {
   .header__action {
-    -webkit-column-gap: calc(10px + 40 * ((100vw - 320px) / 880));
-            column-gap: calc(10px + 40 * ((100vw - 320px) / 880));
+    -webkit-column-gap: calc(5px + 15 * ((100vw - 320px) / 880));
+            column-gap: calc(5px + 15 * ((100vw - 320px) / 880));
   }
 }
 
-.header__phone {
-  -webkit-column-gap: 13px;
-          column-gap: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  -webkit-transition: color .2s ease .0s;
-  transition: color .2s ease .0s;
-  color: #2A2A2A;
-}
-
-.header__phone:hover {
-  color: #7FAD39;
-}
-
-@media (min-width: 768.2px) {
-  .header__phone:after {
-    content: "";
-    width: 2px;
-    height: 24px;
-    position: absolute;
-    /* Если меньше контейнера */
-    right: -25px;
-    pointer-events: none;
-    background-color: rgba(42, 42, 42, 0.2);
+@media (min-width: 552.2px) {
+  .header__action {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 
-@media (min-width: 768.2px) and (max-width: 1200px) {
-  .header__phone:after {
-    right: calc(-10px + -15 * ((100vw - 320px) / 880));
-  }
-}
-
-.header__favorites {
-  position: relative;
-}
-
-@media (any-hover: hover) {
-  .header__favorites:hover .header-favorites__icon {
-    color: red;
-  }
-}
-
-@media (min-width: 768.2px) {
-  .header__favorites:after {
-    content: "";
-    width: 2px;
-    height: 24px;
-    position: absolute;
-    /* Если меньше контейнера */
-    right: -28px;
-    pointer-events: none;
-    background-color: rgba(42, 42, 42, 0.2);
-  }
-}
-
-@media (min-width: 768.2px) and (max-width: 1200px) {
-  .header__favorites:after {
-    right: calc(-8px + -20 * ((100vw - 320px) / 880));
-  }
-}
-
-.header__user {
-  position: relative;
-}
-
-@media (min-width: 768.2px) {
-  .header__menu {
-    display: none;
-  }
-}
-
-@media (max-width: 768.2px) {
-  .header__menu {
-    display: block;
+@media (max-width: 552.2px) {
+  .header__action {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -808,8 +792,8 @@ body._lock-scroll {
 
 @media (max-width: 552.2px) {
   .header-search__open {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -877,8 +861,93 @@ body._lock-scroll {
   color: #999999;
 }
 
+@media (min-width: 768.2px) {
+  .header-action__elem {
+    content: "";
+    width: 2px;
+    height: 24px;
+    pointer-events: none;
+    background-color: rgba(42, 42, 42, 0.2);
+  }
+}
+
+.header-action__phone {
+  -webkit-column-gap: 13px;
+          column-gap: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: #2A2A2A;
+}
+
+@media (any-hover: hover) {
+  .header-action__phone {
+    -webkit-transition: color .2s ease .0s;
+    transition: color .2s ease .0s;
+  }
+  .header-action__phone:hover {
+    color: #7FAD39;
+  }
+}
+
+@media (max-width: 992.2px) {
+  .header-action__phone {
+    width: 32px;
+    height: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header-action__favorites {
+  position: relative;
+}
+
+@media (any-hover: hover) {
+  .header-action__favorites:hover .header-favorites__icon {
+    color: red;
+  }
+}
+
+.header-action__user {
+  position: relative;
+}
+
+@media (min-width: 768.2px) {
+  .header-action__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768.2px) {
+  .header-action__menu {
+    display: block;
+  }
+}
+
 .header-phone__icon {
   font-size: 18px;
+}
+
+@media (max-width: 992.2px) {
+  .header-phone__icon {
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-phone__text {
@@ -903,6 +972,17 @@ body._lock-scroll {
 }
 
 .header-favorites__icon {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 20px;
   color: #2A2A2A;
 }
@@ -927,8 +1007,8 @@ body._lock-scroll {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: -5px;
-  right: -6px;
+  top: 0px;
+  right: -1px;
   border-radius: 50%;
   border: 1px solid #fff;
   background-color: #7FAD39;
@@ -994,6 +1074,22 @@ body._lock-scroll {
 
 .header-user__icon {
   font-size: 20px;
+}
+
+@media (max-width: 768.2px) {
+  .header-user__icon {
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-user__arrow {
@@ -1170,8 +1266,8 @@ body._lock-scroll {
 }
 
 .header-menu__burger {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
