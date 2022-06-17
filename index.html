@@ -11,25 +11,98 @@
 
 <body>
    <div class="banner">
-	<div class="banner__container _container">
-		<div class="banner__body">
-			<a href="#" class="banner__email banner-email _btn-click">
-				<i class="banner-email__icon _icon-email">123</i>
-				<p class="banner-email__text banner-text">Hello@colorlib.com</p>
-			</a>
-			<div class="banner__item banner-text">
-
-			</div>
-			<div class="banner__icons banner-icons">
-				<a href="#" class="banner-icons _icon-facebook _btn-click"></a>
+	<div class="banner__wrapper">
+		<div class="banner__container _container">
+			<div class="banner__body">
+				<a href="#" class="banner__email banner-email _btn-click">
+					<i class="banner-email__icon _icon-email"></i>
+					<p class="banner-email__text banner-text">Hello@colorlib.com</p>
+				</a>
+				<div class="banner__item banner-text">
+					Free Shipping for all order of $99
+				</div>
+				<div class="banner__icons banner-icons">
+					<a href="#" class="banner-icons__item _icon-facebook _btn-click"></a>
+					<a href="#" class="banner-icons__item _icon-whatsapp _btn-click"></a>
+					<a href="#" class="banner-icons__item _icon-linkedin _btn-click"></a>
+					<a href="#" class="banner-icons__item _icon-twitter _btn-click"></a>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
    <header class="header">
-   <div class="header__container _container">
-      <div class="header__body">
+   <div class="header__wrapper">
+      <div class="header__container _container">
+         <div class="header__body">
+            <a href="index.html" class="header__logo">
+               <img src="img/header/logo.svg" alt="header-logo">
+            </a>
+            <div data-da=".header-menu__items,768.2,1" class="header__location header-location">
+               <div class="header-location__select select">
+                  <button class="header-location__btn _btn-click select__btn">
+                     <i class="header-location__icon _icon-location"></i>
+                     <p class="header-location__selected select__selected">Gurugram 1</p>
+                     <i class="header-location__arrow _icon-arrow"></i>
+                  </button>
+                  <ul class="header-location__list">
+                     <li class="header-location__item select__item">Gurugram 1</li>
+                     <li class="header-location__item select__item">Gurugram 2</li>
+                     <li class="header-location__item select__item">Gurugram 3</li>
+                     <li class="header-location__item select__item">Gurugram 4</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="header__search header-search">
+               <form action="#" class="header-search__form">
+                  <button type="submit" class="header-search__btn _btn-click _icon-search"></button>
+                  <input type="text" class="header-search__input" placeholder="Search for products...">
+               </form>
+            </div>
+            <div class="header__action">
+               <a href="tel:+1800000000" class="header__phone header-phone _btn-click">
+                  <i class="header-phone__icon _icon-phone"></i>
+                  <p class="header-phone__text">1800-000-000</p>
+               </a>
+               <a href="#" class="header__favorites header-favorites _btn-click">
+                  <i class="header-favorites__icon _icon-favorites"></i>
+                  <span class="header-favorites__item">3</span>
+               </a>
+               <div class="header__user header-user">
+                  <button class="header-user__dropdown _btn-click">
+                     <i class="header-user__icon _icon-user"></i>
+                     <span>John Doe</span>
+                     <i class="header-user__arrow _icon-arrow"></i>
+                  </button>
+                  <div class="header-user__body">
+                     <div class="header-user__top">
+                        <button class="header-user__close"><span></span></button>
+                     </div>
+                     <div class="header-user__list">
+                        <a href="#" class="header-user__item _btn-click">Пункт №1</a>
+                        <a href="#" class="header-user__item _btn-click">Пункт №2</a>
+                        <a href="#" class="header-user__item _btn-click">Пункт №3</a>
+                        <a href="#" class="header-user__item _btn-click">Пункт №4</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="header__menu header-menu">
+                  <button class="header-menu__burger"><span></span></button>
+                  <div class="header-menu__wrapper"></div>
+                  <div class="header-menu__body">
+                     <div class="header-menu__top">
+                        <button class="header-menu__logo">
+                           <img src="img/header/logo.svg" alt="menu-logo">
+                        </button>
+                        <button class="header-menu__close"><span></span></button>
+                     </div>
+                     <div class="header-menu__items">
 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 </header>
