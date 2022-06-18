@@ -53,6 +53,10 @@ function userShow() {
 	userBtn.addEventListener("click", function () {
 		userBtn.classList.toggle("_active");
 		userBody.classList.toggle("_active");
+
+		if (window.innerWidth < 768.2) {
+			document.body.classList.toggle("_lock-scroll");
+		}
 	});
 
 	document.addEventListener("click", function (e) {
@@ -62,6 +66,7 @@ function userShow() {
 			|| elementTarget.closest(".header-user__close")) {
 			userBtn.classList.remove("_active");
 			userBody.classList.remove("_active");
+			document.body.classList.remove("_lock-scroll");
 		}
 	});
 
