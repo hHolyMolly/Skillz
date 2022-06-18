@@ -144,6 +144,52 @@ function scrollHeader() {
 scrollHeader()
 
 
+//< " ДОБАВЛЕНИЕ КЛАССА ХЕДЕРУ ПРИ СКРОЛЛЕ " >=============================================================================================================>//
+function menuCategories() {
+	const categoriesBtn = document.querySelector(".menu-categories__btn");
+	const categoriesList = document.querySelector(".menu-categories__body");
+	const categoriesArrows = document.querySelectorAll(".menu-categories__arrow");
+	const categoriesBackBtns = document.querySelectorAll(".menu-categories__back");
+
+	categoriesBtn.addEventListener("click", function () {
+
+		if (window.innerWidth < 768.2) {
+			categoriesBtn.classList.toggle("_active");
+			categoriesList.classList.toggle("_active");
+		}
+	});
+
+	document.addEventListener("click", function (e) {
+		const elementTarget = e.target;
+
+		if (!elementTarget.closest(".menu-categories")) {
+			categoriesBtn.classList.remove("_active");
+			categoriesList.classList.remove("_active");
+		}
+	})
+
+	if (categoriesArrows.length > 0) {
+		for (let index = 0; index < categoriesArrows.length; index++) {
+			const categoriesArrow = categoriesArrows[index];
+
+			categoriesArrow.addEventListener("click", function (e) {
+				categoriesArrow.parentElement.classList.toggle("_active");
+
+				if (window.innerWidth < 768.2) {
+					e.preventDefault();
+				}
+			});
+
+			categoriesBackBtns.forEach(categoriesBackBtn => {
+				categoriesBackBtn.addEventListener("click", function () {
+					categoriesArrow.parentElement.classList.remove("_active");
+				});
+			});
+		}
+	}
+}
+menuCategories()
+
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
 	function DynamicAdapt(type) {
