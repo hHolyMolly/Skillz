@@ -2551,6 +2551,37 @@ body._lock-scroll {
   font-size: 6px;
 }
 
+.sale__container {
+  max-width: 100%;
+}
+
+.sale__body {
+  /* Если меньше контейнера */
+  padding-top: 60px;
+  /* Если меньше контейнера */
+  padding-bottom: 60px;
+}
+
+@media (max-width: 1200px) {
+  .sale__body {
+    padding-top: calc(20px + 40 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (max-width: 1200px) {
+  .sale__body {
+    padding-bottom: calc(20px + 40 * ((100vw - 320px) / 880));
+  }
+}
+
+.sale-slider__image {
+  text-align: center;
+}
+
+.sale-slider__image img {
+  max-width: 100%;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;

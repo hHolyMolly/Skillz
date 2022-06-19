@@ -35,18 +35,19 @@ userShow()
 //< " МЕНЮ БУРГЕР " >=============================================================================================================>//
 function мenuBurger() {
 	const menuBody = document.querySelector(".header-menu__body");
+	const menuBurger = document.querySelector(".header-menu__burger");
 	const menuWrapper = document.querySelector(".header-menu__wrapper");
 
 	const body = document.body;
 
+	menuBurger.addEventListener("click", function () {
+		menuBody.classList.add("_active");
+		menuWrapper.classList.add("_active");
+		body.classList.add("_lock-scroll");
+	})
+
 	document.addEventListener("click", function (e) {
 		const elementTarget = e.target;
-
-		if (elementTarget.closest(".header-menu__burger")) {
-			menuBody.classList.add("_active");
-			menuWrapper.classList.add("_active");
-			body.classList.add("_lock-scroll");
-		}
 
 		if (elementTarget.closest(".header-menu__wrapper") || elementTarget.closest(".header-menu__close") || elementTarget.closest(".header-menu__logo")) {
 			menuBody.classList.remove("_active");
@@ -148,6 +149,17 @@ function menuCategories() {
 	}
 }
 menuCategories()
+
+//< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
+new Swiper(".sale-slider", {
+	slidesPerView: 5,
+	spaceBetween: 30,
+	loop: true,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
 
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
