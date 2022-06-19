@@ -154,7 +154,14 @@ menuCategories()
 new Swiper(".sale-slider", {
 	slidesPerView: 5,
 	spaceBetween: 30,
+	centeredSlides: true,
+	grabCursor: true,
 	loop: true,
+	speed: 1000,
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false,
+	},
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
