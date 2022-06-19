@@ -148,44 +148,50 @@ scrollHeader()
 function menuCategories() {
 	const categoriesBtn = document.querySelector(".menu-categories__btn");
 	const categoriesList = document.querySelector(".menu-categories__body");
-	const categoriesArrows = document.querySelectorAll(".menu-categories__arrow");
-	const categoriesBackBtns = document.querySelectorAll(".menu-categories__back");
+	const body = document.body;
 
 	categoriesBtn.addEventListener("click", function () {
 
 		if (window.innerWidth < 768.2) {
 			categoriesBtn.classList.toggle("_active");
 			categoriesList.classList.toggle("_active");
+			body.classList.toggle("_lock-scroll");
 		}
 	});
 
-	document.addEventListener("click", function (e) {
-		const elementTarget = e.target;
+	const categoriesLinks = document.querySelectorAll(".menu-categories__link");
 
-		if (!elementTarget.closest(".menu-categories")) {
-			categoriesBtn.classList.remove("_active");
-			categoriesList.classList.remove("_active");
-		}
-	})
-
-	if (categoriesArrows.length > 0) {
-		for (let index = 0; index < categoriesArrows.length; index++) {
-			const categoriesArrow = categoriesArrows[index];
-
-			categoriesArrow.addEventListener("click", function (e) {
-				categoriesArrow.parentElement.classList.toggle("_active");
+	if (categoriesLinks.length > 0) {
+		categoriesLinks.forEach(categoriesLink => {
+			categoriesLink.addEventListener("click", function (e) {
 
 				if (window.innerWidth < 768.2) {
+					categoriesLink.parentElement.classList.toggle("_active");
 					e.preventDefault();
 				}
+
 			});
+
+			const categoriesBackBtns = document.querySelectorAll(".menu-categories-sub__back");
 
 			categoriesBackBtns.forEach(categoriesBackBtn => {
 				categoriesBackBtn.addEventListener("click", function () {
-					categoriesArrow.parentElement.classList.remove("_active");
+					categoriesLink.parentElement.classList.remove("_active");
 				});
 			});
-		}
+
+			const categoriesClose = document.querySelector(".menu-categories__close");
+
+			categoriesClose.addEventListener("click", function () {
+
+				if (window.innerWidth < 768.2) {
+					categoriesBtn.classList.remove("_active");
+					categoriesList.classList.remove("_active");
+					body.classList.remove("_lock-scroll");
+					categoriesLink.parentElement.classList.remove("_active");
+				}
+			});
+		});
 	}
 }
 menuCategories()
