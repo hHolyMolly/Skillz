@@ -152,19 +152,38 @@ menuCategories()
 
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 new Swiper(".sale-slider", {
-	slidesPerView: 5,
-	spaceBetween: 30,
-	centeredSlides: true,
+	slidesPerView: 1,
+	spaceBetween: 15,
 	grabCursor: true,
 	loop: true,
-	speed: 1000,
+	speed: 800,
+
+	// parallax: true,
 	autoplay: {
-		delay: 2000,
+		delay: 3000,
 		disableOnInteraction: false,
 	},
+
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".sale-slider__arrow-next",
+		prevEl: ".sale-slider__arrow-prev",
+	},
+
+	breakpoints: {
+		1440.2: {
+			slidesPerView: 5,
+			spaceBetween: 30,
+		},
+		992.2: {
+			slidesPerView: 4,
+			spaceBetween: 20,
+		},
+		768.2: {
+			slidesPerView: 3,
+		},
+		425.2: {
+			slidesPerView: 2,
+		},
 	},
 });
 
