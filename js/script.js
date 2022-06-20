@@ -242,43 +242,57 @@ new Swiper(".products-slider", {
 //< " БЛОК ПРОДУКТОВ " >=============================================================================================================>//
 function products() {
 
-	function productsCalc() {
-		const productInpts = document.querySelectorAll('.products-slider-quantity__input');
+	const productsCalc = function () {
+		let productInpts = document.querySelectorAll('.products-slider-quantity__input');
 		const productPlusBtns = document.querySelectorAll('.products-slider-quantity__plus');
+		let productDataName;
 
-		if (productPlusBtns.length > 0) {
-			productPlusBtns.forEach(productPlusBtn => {
-				productPlusBtn.addEventListener("click", function () {
+		productPlusBtns.forEach(productPlusBtn => {
+			productPlusBtn.addEventListener("click", function () {
 
+				productDataName = this.getAttribute('data-calc-name');
+
+				function productData(productDataName) {
 					productInpts.forEach(productInpt => {
-						let qty = parseInt(productInpt.value);
-						if (productInpt.value < 10 || productInpt.value === 10) {
-							qty = qty + 1;
-						}
-						productInpt.value = qty;
-					});
 
-				});
+						if (productInpt.classList.contains(productDataName)) {
+							let qty = parseInt(productInpt.value);
+							if (productInpt.value < 10 || productInpt.value === 10) {
+								qty = qty + 1;
+							}
+							productInpt.value = qty;
+						}
+					});
+				}
+				productData(productDataName)
+
 			});
-		}
+		});
 
 		const productMinusBtns = document.querySelectorAll('.products-slider-quantity__minus');
 
-		if (productMinusBtns.length > 0) {
-			productMinusBtns.forEach(productMinusBtn => {
-				productMinusBtn.addEventListener("click", function () {
+		productMinusBtns.forEach(productMinusBtn => {
+			productMinusBtn.addEventListener("click", function () {
 
+				productDataName = this.getAttribute('data-calc-name');
+
+				function productData(productDataName) {
 					productInpts.forEach(productInpt => {
-						let qty = parseInt(productInpt.value);
-						if (productInpt.value > 1) {
-							qty = qty - 1;
-						}
-						productInpt.value = qty;
-					});
 
-				});
+						if (productInpt.classList.contains(productDataName)) {
+							let qty = parseInt(productInpt.value);
+							if (productInpt.value > 1) {
+								qty = qty - 1;
+							}
+							productInpt.value = qty;
+						}
+					});
+				}
+				productData(productDataName)
+
 			});
-		}
+		});
+
 	}
 	productsCalc()
 
