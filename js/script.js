@@ -216,7 +216,7 @@ new Swiper(".cetegiries-slider", {
 
 new Swiper(".products-slider", {
 	slidesPerView: 2,
-	spaceBetween: 10,
+	spaceBetween: 15,
 	grabCursor: true,
 	loop: true,
 	speed: 300,
@@ -230,11 +230,11 @@ new Swiper(".products-slider", {
 		992.2: {
 			slidesPerView: 5,
 		},
+		768.2: {
+			slidesPerView: 4,
+		},
 		552.2: {
 			slidesPerView: 3,
-		},
-		375.2: {
-			spaceBetween: 15,
 		},
 	},
 });
@@ -243,17 +243,21 @@ new Swiper(".products-slider", {
 function products() {
 
 	function productsCalc() {
-		const productInpt = document.querySelector('.products-slider-quantity__input');
+		const productInpts = document.querySelectorAll('.products-slider-quantity__input');
 		const productPlusBtns = document.querySelectorAll('.products-slider-quantity__plus');
 
 		if (productPlusBtns.length > 0) {
 			productPlusBtns.forEach(productPlusBtn => {
 				productPlusBtn.addEventListener("click", function () {
-					let qty = parseInt(productInpt.value);
-					if (productInpt.value < 10 || productInpt.value === 10) {
-						qty = qty + 1;
-					}
-					productInpt.value = qty;
+
+					productInpts.forEach(productInpt => {
+						let qty = parseInt(productInpt.value);
+						if (productInpt.value < 10 || productInpt.value === 10) {
+							qty = qty + 1;
+						}
+						productInpt.value = qty;
+					});
+
 				});
 			});
 		}
@@ -263,11 +267,15 @@ function products() {
 		if (productMinusBtns.length > 0) {
 			productMinusBtns.forEach(productMinusBtn => {
 				productMinusBtn.addEventListener("click", function () {
-					let qty = parseInt(productInpt.value);
-					if (productInpt.value > 1) {
-						qty = qty - 1;
-					}
-					productInpt.value = qty;
+
+					productInpts.forEach(productInpt => {
+						let qty = parseInt(productInpt.value);
+						if (productInpt.value > 1) {
+							qty = qty - 1;
+						}
+						productInpt.value = qty;
+					});
+
 				});
 			});
 		}

@@ -5,24 +5,32 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -33,7 +41,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -50,7 +60,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -66,9 +77,24 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @font-face {
@@ -3084,6 +3110,17 @@ body._lock-scroll {
   padding: 0px;
 }
 
+.products__body {
+  /* Если меньше контейнера */
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .products__body {
+    padding-bottom: calc(30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
 .products__item {
   padding: 0px 15px;
   /* Если меньше контейнера */
@@ -3169,6 +3206,8 @@ body._lock-scroll {
 }
 
 .products-slider-item__top {
+  /* Если меньше контейнера */
+  margin-bottom: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3178,6 +3217,22 @@ body._lock-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__top {
+    margin-bottom: calc(5px + 3 * ((100vw - 320px) / 880));
+  }
+}
+
+.products-slider-item__label {
+  padding: 8px 7px;
+  background-color: #7FAD39;
+  font-family: 'Cerebri Sans Pro';
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 183.33333%;
+  color: #fff;
 }
 
 .products-slider-item__favorites {
@@ -3214,8 +3269,115 @@ body._lock-scroll {
   color: #fff;
 }
 
+.products-slider-item__image {
+  overflow: hidden;
+}
+
+@media (any-hover: hover) {
+  .products-slider-item__image img {
+    -webkit-transition: -webkit-transform .2s ease .0s;
+    transition: -webkit-transform .2s ease .0s;
+    transition: transform .2s ease .0s;
+    transition: transform .2s ease .0s, -webkit-transform .2s ease .0s;
+  }
+  .products-slider-item__image:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 .products-slider-item__image img {
   max-width: 100%;
+}
+
+.products-slider-item__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.products-slider-item__quality {
+  font-family: Cerebri Sans Pro;
+  /* Если меньше контейнера */
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 137.5%;
+  color: #A9A9A9;
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__quality {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+.products-slider-item__name {
+  /* Если меньше контейнера */
+  margin-bottom: 15px;
+  font-family: 'Cerebri Sans Pro';
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 137.5%;
+  color: #2A2A2A;
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__name {
+    margin-bottom: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__name {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (any-hover: hover) {
+  .products-slider-item__name {
+    -webkit-transition: color 0.2s ease 0s;
+    transition: color 0.2s ease 0s;
+  }
+  .products-slider-item__name:hover {
+    color: #7FAD39;
+  }
+}
+
+.products-slider-item__price {
+  /* Если меньше контейнера */
+  margin-bottom: 25px;
+  font-family: 'Cerebri Sans Pro';
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 137.5%;
+  color: #7FAD39;
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__price {
+    margin-bottom: calc(15px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__price {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+.products-slider-item__price .delete {
+  text-decoration: line-through;
+  color: #A9A9A9;
 }
 
 .products-slider-item__action {
@@ -3228,6 +3390,41 @@ body._lock-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.products-slider-item__basket {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  /* Если меньше контейнера */
+  font-size: 20px;
+  color: #A9A9A9;
+}
+
+@media (any-hover: hover) {
+  .products-slider-item__basket {
+    -webkit-transition: background-color .2s ease .0s;
+    transition: background-color .2s ease .0s;
+  }
+  .products-slider-item__basket:hover {
+    background-color: #eeeeee;
+  }
+}
+
+@media (max-width: 1200px) {
+  .products-slider-item__basket {
+    font-size: calc(15px + 5 * ((100vw - 320px) / 880));
+  }
 }
 
 .products-slider-quantity__form {
