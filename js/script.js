@@ -218,7 +218,6 @@ new Swiper(".products-slider", {
 	slidesPerView: 2,
 	spaceBetween: 15,
 	grabCursor: true,
-	loop: true,
 	speed: 300,
 
 	navigation: {
@@ -265,7 +264,6 @@ function products() {
 					});
 				}
 				productData(productDataName)
-
 			});
 		});
 
@@ -289,7 +287,6 @@ function products() {
 					});
 				}
 				productData(productDataName)
-
 			});
 		});
 
