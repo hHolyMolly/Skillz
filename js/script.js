@@ -150,7 +150,7 @@ function menuCategories() {
 }
 menuCategories()
 
-//< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
+//< " ОСНОВНОЙ СЛАЙДЕР И СЛАЙДЕР КАТЕГОРИЙ " >=============================================================================================================>//
 new Swiper(".sale-slider", {
 	slidesPerView: 1,
 	spaceBetween: 15,
@@ -213,6 +213,82 @@ new Swiper(".cetegiries-slider", {
 		},
 	},
 });
+
+new Swiper(".products-slider", {
+	slidesPerView: 2,
+	spaceBetween: 10,
+	grabCursor: true,
+	loop: true,
+	speed: 300,
+
+	navigation: {
+		nextEl: ".products-slider__arrow-next",
+		prevEl: ".products-slider__arrow-prev",
+	},
+
+	breakpoints: {
+		992.2: {
+			slidesPerView: 5,
+		},
+		552.2: {
+			slidesPerView: 3,
+		},
+		375.2: {
+			spaceBetween: 15,
+		},
+	},
+});
+
+//< " БЛОК ПРОДУКТОВ " >=============================================================================================================>//
+function products() {
+
+	function productsCalc() {
+		const productInpt = document.querySelector('.products-slider-quantity__input');
+		const productPlusBtns = document.querySelectorAll('.products-slider-quantity__plus');
+
+		if (productPlusBtns.length > 0) {
+			productPlusBtns.forEach(productPlusBtn => {
+				productPlusBtn.addEventListener("click", function () {
+					let qty = parseInt(productInpt.value);
+					if (productInpt.value < 10 || productInpt.value === 10) {
+						qty = qty + 1;
+					}
+					productInpt.value = qty;
+				});
+			});
+		}
+
+		const productMinusBtns = document.querySelectorAll('.products-slider-quantity__minus');
+
+		if (productMinusBtns.length > 0) {
+			productMinusBtns.forEach(productMinusBtn => {
+				productMinusBtn.addEventListener("click", function () {
+					let qty = parseInt(productInpt.value);
+					if (productInpt.value > 1) {
+						qty = qty - 1;
+					}
+					productInpt.value = qty;
+				});
+			});
+		}
+	}
+	productsCalc()
+
+	function productsFavorite() {
+		const productFavoriteBtns = document.querySelectorAll(".products-slider-item__favorites");
+
+		if (productFavoriteBtns.length > 0) {
+			productFavoriteBtns.forEach(productFavoriteBtn => {
+				productFavoriteBtn.addEventListener("click", function () {
+					productFavoriteBtn.classList.toggle("_active");
+				});
+			});
+		}
+	}
+	productsFavorite()
+
+}
+products()
 
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
