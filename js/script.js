@@ -187,6 +187,33 @@ new Swiper(".sale-slider", {
 	},
 });
 
+new Swiper(".cetegiries-slider", {
+	slidesPerView: 2,
+	spaceBetween: 15,
+	grabCursor: true,
+	loop: true,
+	speed: 300,
+
+	navigation: {
+		nextEl: ".cetegiries-slider__arrow-next",
+		prevEl: ".cetegiries-slider__arrow-prev",
+	},
+
+	breakpoints: {
+		992.2: {
+			slidesPerView: 6,
+			spaceBetween: 20,
+		},
+		552.2: {
+			slidesPerView: 4,
+		},
+		375.2: {
+			slidesPerView: 3,
+			spaceBetween: 15,
+		},
+	},
+});
+
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
 	function DynamicAdapt(type) {
