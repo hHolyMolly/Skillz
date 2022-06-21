@@ -3019,6 +3019,19 @@ body._lock-scroll {
   }
 }
 
+@media (any-hover: hover) {
+  .cetegiries-slider__slide.swiper-slide {
+    -webkit-transition: background-color .2s ease .0s;
+    transition: background-color .2s ease .0s;
+  }
+  .cetegiries-slider__slide.swiper-slide:hover {
+    background-color: #e9ffe8;
+  }
+  .cetegiries-slider__slide.swiper-slide:hover .cetegiries-slider__title {
+    color: #7FAD39;
+  }
+}
+
 .cetegiries-slider__icon {
   /* Если меньше контейнера */
   margin-bottom: 14px;
@@ -3043,6 +3056,8 @@ body._lock-scroll {
 }
 
 .cetegiries-slider__title {
+  -webkit-transition: color .2s ease .0s;
+  transition: color .2s ease .0s;
   font-family: 'Cerebri Sans Pro';
   /* Если меньше контейнера */
   font-size: 14px;
@@ -3254,6 +3269,7 @@ body._lock-scroll {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50px;
+  cursor: pointer;
   -webkit-transition: background-color .3s ease .0s, color .3s ease .0s;
   transition: background-color .3s ease .0s, color .3s ease .0s;
   background-color: #D8E6C3;
@@ -3420,6 +3436,7 @@ body._lock-scroll {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
+  cursor: pointer;
   background-color: transparent;
   /* Если меньше контейнера */
   font-size: 20px;
@@ -3454,6 +3471,7 @@ body._lock-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   background-color: #2A2A2A;
   font-size: 26px;
   color: #fff;
@@ -3489,6 +3507,7 @@ body._lock-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   background-color: #2A2A2A;
   font-size: 26px;
   color: #fff;
