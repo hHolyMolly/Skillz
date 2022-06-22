@@ -191,7 +191,6 @@ new Swiper(".cetegiries-slider", {
 	slidesPerView: 2,
 	spaceBetween: 15,
 	loop: true,
-	simulateTouch: false,
 
 	navigation: {
 		nextEl: ".cetegiries-slider__arrow-next",
@@ -216,7 +215,6 @@ new Swiper(".cetegiries-slider", {
 new Swiper(".products-slider", {
 	slidesPerView: 2,
 	spaceBetween: 15,
-	simulateTouch: false,
 
 	navigation: {
 		nextEl: ".products-slider__arrow-next",
@@ -226,7 +224,6 @@ new Swiper(".products-slider", {
 	breakpoints: {
 		992.2: {
 			slidesPerView: 5,
-			loopAdditionalSlides: 5,
 		},
 		768.2: {
 			slidesPerView: 4,
