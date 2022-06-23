@@ -43,7 +43,7 @@
    <div class="header__wrapper">
       <div class="header__container _container">
          <div class="header__body">
-            <a href="index.html" class="header__logo">
+            <a href="index.html" class="header__logo _btn-click">
                <img src="img/header/logo.svg" alt="header-logo">
             </a>
             <div class="header__location header-location">
@@ -1310,7 +1310,7 @@
             </div>
          </div>
       </section>
-      <section class="page__products products">
+      <section class="page__products products last">
          <div class="products__wrapper">
             <div class="products__body">
                <div class="products__container _container">
@@ -1669,63 +1669,89 @@
    </main>
 
    <footer class="footer">
-   <div class="footer__container _container">
-      <div class="footer__body">
-         <div class="footer__content">
-            <div class="footer__contact footer-contact">
-               <a href="#" class="footer-contact">
-                  <img src="img/footer/logo.svg" alt="footer-logo">
-               </a>
-               <a href="#" class="footer-contact__address">
-                  Address: 60-49 Road 11378 New York
-               </a>
-               <a href="+651118.888" class="footer-contact__phone">
-                  Phone: +65 11.188.888
-               </a>
-               <a href="hello@colorlib.com" class="footer-contact__e-mail">
-                  Email: hello@colorlib.com
-               </a>
-            </div>
-            <div class="footer__column footer-column">
-               <ul class="footer-column__list">
-                  <li class="footer-column__item">
-                     <div class="footer-column__title">
-                        Useful link
-                     </div>
+   <div class="footer__wrapper">
+      <div class="footer__container _container">
+         <div class="footer__body">
+            <div class="footer__content">
+               <div class="footer__contact footer-contact">
+                  <a href="#" class="footer-contact__logo _btn-click">
+                     <img src="img/footer/logo.svg" alt="footer-logo">
+                  </a>
+                  <a href="#" class="footer-contact__address footer-contact__item _btn-click">
+                     Address: 60-49 Road 11378 New York
+                  </a>
+                  <a href="+651118.888" class="footer-contact__phone footer-contact__item _btn-click">
+                     Phone: +65 11.188.888
+                  </a>
+                  <a href="hello@colorlib.com" class="footer-contact__e-mail footer-contact__item _btn-click">
+                     Email: hello@colorlib.com
+                  </a>
+               </div>
+               <div class="footer__column footer-column">
+                  <div class="footer-column__title">
+                     Useful link
+                  </div>
+                  <div class="footer-column__body">
                      <ul class="footer-column__sub-list">
-                        <li class="footer-column__sub-item"><a href="#">About Us</a></li>
-                        <li class="footer-column__sub-item"><a href="#">About Our Shop</a></li>
-                        <li class="footer-column__sub-item"><a href="#">Delivery infomation</a></li>
-                        <li class="footer-column__sub-item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer-column__sub-item"><a href="#">Our Sitemap</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">About Us</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">About Our Shop</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">Delivery infomation</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">Privacy Policy</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">Our Sitemap</a></li>
                      </ul>
-                  </li>
-               </ul>
-               <ul class="footer-column__sub-list">
-                  <li class="footer-column__sub-item"><a href="#">HOME</a></li>
-                  <li class="footer-column__sub-item"><a href="#">Product</a></li>
-                  <li class="footer-column__sub-item"><a href="#">Contact</a></li>
-                  <li class="footer-column__sub-item"><a href="#">STORES</a></li>
-               </ul>
-            </div>
-            <div class="footer__action">
-               <div class="footer__download footer-download">
-                  <h5 class="footer-download__title">
-                     Download App
-                  </h5>
-                  <div class="footer-download__items">
-                     <a href="#" class="footer-download__card">
-                        <img src="img/footer/app-store.png" alt="app-store">
-                     </a>
-                     <a href="#" class="footer-download__card">
-                        <img src="img/footer/google-play.png" alt="google-play">
-                     </a>
+                     <ul class="footer-column__sub-list">
+                        <li class="footer-column__sub-item _btn-click"><a href="#">HOME</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">Product</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">Contact</a></li>
+                        <li class="footer-column__sub-item _btn-click"><a href="#">STORES</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="footer__action">
+                  <div class="footer__download footer-download">
+                     <h5 class="footer-download__title">
+                        Download App
+                     </h5>
+                     <div class="footer-download__items">
+                        <a href="#" class="footer-download__card _btn-click">
+                           <img src="img/footer/app-store.png" alt="app-store">
+                        </a>
+                        <a href="#" class="footer-download__card _btn-click">
+                           <img src="img/footer/google-play.png" alt="google-play">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="footer__subscribe footer-subscribe">
+                     <h5 class="footer-subscribe__title">
+                        Sign Up for Our Newsletter
+                     </h5>
+                     <form action="#" class="footer-subscribe__form">
+                        <input type="email" class="footer-subscribe__input" placeholder="enter email address">
+                        <button class="footer-subscribe__send">SUBSCRIBE</button>
+                     </form>
+                  </div>
+                  <div class="footer__payment footer-payment">
+                     <h5 class="footer-payment__title">
+                        Payment Method
+                     </h5>
+                     <div class="footer-payment__list">
+                        <a href="#" class="footer-payment__item _btn-click"><img src="img/footer/payment/01.svg"
+                              alt="item-01"></a>
+                        <a href="#" class="footer-payment__item _btn-click"><img src="img/footer/payment/02.svg"
+                              alt="item-02"></a>
+                        <a href="#" class="footer-payment__item _btn-click"><img src="img/footer/payment/03.svg"
+                              alt="item-03"></a>
+                        <a href="#" class="footer-payment__item _btn-click"><img src="img/footer/payment/04.svg"
+                              alt="item-04"></a>
+                        <a href="#" class="footer-payment__item _btn-click"><img src="img/footer/payment/05.svg"
+                              alt="item-05"></a>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-         <div class="footer__copy">
-
+            <div class="footer__copy">
+               Copyright ©2021 All rights reserved | This template is made with 💚 by LOGO
+            </div>
          </div>
       </div>
    </div>
