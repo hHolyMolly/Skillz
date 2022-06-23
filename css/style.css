@@ -2445,10 +2445,13 @@ body._lock-scroll {
 }
 
 .menu-categories-sub__back {
-  padding: 15px 45px 15px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 15px;
+  /* Если меньше контейнера */
+  max-width: 200px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -2461,6 +2464,12 @@ body._lock-scroll {
   font-weight: 400;
   line-height: 125%;
   color: #2A2A2A;
+}
+
+@media (max-width: 1200px) {
+  .menu-categories-sub__back {
+    max-width: calc(100px + 100 * ((100vw - 320px) / 880));
+  }
 }
 
 @media (min-width: 768.2px) {
@@ -2893,6 +2902,8 @@ body._lock-scroll {
           align-items: center;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 2;
   border-radius: 50%;
   border: 2px solid #E6E6E6;
@@ -3090,6 +3101,8 @@ body._lock-scroll {
   position: absolute;
   top: 50%;
   z-index: 2;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   border-radius: 50%;
   border: 2px solid #E6E6E6;
   background-color: #fff;
@@ -3161,9 +3174,6 @@ body._lock-scroll {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .products-slider__item.swiper-slide {
@@ -3200,6 +3210,8 @@ body._lock-scroll {
   position: absolute;
   top: 50%;
   z-index: 2;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   border-radius: 50%;
   border: 2px solid #E6E6E6;
   background-color: #fff;
@@ -3249,9 +3261,9 @@ body._lock-scroll {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 1200px) {
@@ -3261,6 +3273,7 @@ body._lock-scroll {
 }
 
 .products-slider-item__label {
+  margin-right: 15px;
   padding: 8px 7px;
   background-color: #7FAD39;
   font-family: 'Cerebri Sans Pro';
@@ -3271,7 +3284,7 @@ body._lock-scroll {
 }
 
 .products-slider-item__favorites {
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3337,10 +3350,19 @@ body._lock-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   text-align: center;
 }
 
 .products-slider-item__quality {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   font-family: Cerebri Sans Pro;
   /* Если меньше контейнера */
   font-size: 12px;
@@ -3358,6 +3380,9 @@ body._lock-scroll {
 .products-slider-item__name {
   /* Если меньше контейнера */
   margin-bottom: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   font-family: 'Cerebri Sans Pro';
   /* Если меньше контейнера */
   font-size: 16px;
@@ -3391,6 +3416,9 @@ body._lock-scroll {
 .products-slider-item__price {
   /* Если меньше контейнера */
   margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Cerebri Sans Pro';
   /* Если меньше контейнера */
   font-size: 16px;

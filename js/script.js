@@ -83,7 +83,6 @@ function actionsHeader() {
 				const categoriesClose = document.querySelector(".menu-categories__close");
 
 				categoriesClose.addEventListener("click", function () {
-
 					if (window.innerWidth < 768.2) {
 						categoriesBtn.classList.remove("_active");
 						categoriesList.classList.remove("_active");
@@ -93,6 +92,10 @@ function actionsHeader() {
 				});
 			});
 		}
+
+		const categoriesItem = document.querySelector(".menu-categories__item");
+
+
 	}
 	menuCategories()
 
@@ -277,7 +280,7 @@ function products() {
 
 						if (productInpt.classList.contains(productDataName)) {
 							let qty = parseInt(productInpt.value);
-							if (productInpt.value > 10) {
+							if (productInpt.value > 1) {
 								qty = qty - 1;
 							}
 							productInpt.value = qty;
