@@ -29,10 +29,12 @@ function actionsHeader() {
 	function showSearch() {
 		const searchOpen = document.querySelector(".header-search__open");
 		const searchBody = document.querySelector(".header-search__item");
+		const searchInput = document.querySelector(".header-search__input");
 
 		searchOpen.addEventListener("click", function () {
 			searchBody.classList.toggle('_active');
 		});
+
 
 		document.addEventListener("click", function (e) {
 			const elementTarget = e.target;
@@ -40,6 +42,7 @@ function actionsHeader() {
 			if (!elementTarget.closest(".header-search") && searchBody.classList.contains('_active') && window.innerWidth < 552.2) {
 				searchBody.classList.remove('_active');
 				searchOpen.style.display = "flex";
+				searchInput.focus();
 			}
 		});
 	}
