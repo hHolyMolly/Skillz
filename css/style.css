@@ -3192,9 +3192,17 @@ body._lock-scroll {
   }
 }
 
-.sale-slider__slide.swiper-slide:hover .sale-slider__image img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (any-hover: hover) {
+  .sale-slider__slide.swiper-slide .sale-slider__image img {
+    -webkit-transition: -webkit-transform .3s ease .0s;
+    transition: -webkit-transform .3s ease .0s;
+    transition: transform .3s ease .0s;
+    transition: transform .3s ease .0s, -webkit-transform .3s ease .0s;
+  }
+  .sale-slider__slide.swiper-slide:hover .sale-slider__image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 .sale-slider__image {
@@ -3209,10 +3217,6 @@ body._lock-scroll {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform .3s ease .0s;
-  transition: -webkit-transform .3s ease .0s;
-  transition: transform .3s ease .0s;
-  transition: transform .3s ease .0s, -webkit-transform .3s ease .0s;
 }
 
 .sale-slider__item {
@@ -4127,7 +4131,7 @@ body._lock-scroll {
 }
 
 @media (any-hover: hover) {
-  .value-column__item_little img {
+  .value-column__item_little .value-column-little__image img {
     -webkit-transition: -webkit-transform .3s ease .0s;
     transition: -webkit-transform .3s ease .0s;
     transition: transform .3s ease .0s;
@@ -4156,7 +4160,7 @@ body._lock-scroll {
 }
 
 @media (any-hover: hover) {
-  .value-column__item_big img {
+  .value-column__item_big .value-column-big__image img {
     -webkit-transition: -webkit-transform .3s ease .0s;
     transition: -webkit-transform .3s ease .0s;
     transition: transform .3s ease .0s;
