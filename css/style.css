@@ -99,6 +99,54 @@ input[type=number] {
 }
 
 @font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url("../fonts/CerebriSansPro-Bold.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Bold.woff") format("woff"), url("../fonts/CerebriSansPro-Bold.ttf") format("truetype"), url("../fonts/CerebriSansPro-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url("../fonts/CerebriSansPro-ExtraBold.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-ExtraBold.woff") format("woff"), url("../fonts/CerebriSansPro-ExtraBold.ttf") format("truetype"), url("../fonts/CerebriSansPro-ExtraBold.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url("../fonts/CerebriSansPro-Light.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Light.woff") format("woff"), url("../fonts/CerebriSansPro-Light.ttf") format("truetype"), url("../fonts/CerebriSansPro-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url("../fonts/CerebriSansPro-Medium.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Medium.woff") format("woff"), url("../fonts/CerebriSansPro-Medium.ttf") format("truetype"), url("../fonts/CerebriSansPro-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url("../fonts/CerebriSansPro-Regular.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Regular.woff") format("woff"), url("../fonts/CerebriSansPro-Regular.ttf") format("truetype"), url("../fonts/CerebriSansPro-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url("../fonts/CerebriSansPro-SemiBold.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-SemiBold.woff") format("woff"), url("../fonts/CerebriSansPro-SemiBold.ttf") format("truetype"), url("../fonts/CerebriSansPro-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'iconfonts';
   src: url("../iconfonts/iconfonts.eot?lhqpxj");
   src: url("../iconfonts/iconfonts.eot?lhqpxj#iefix") format("embedded-opentype"), url("../iconfonts/iconfonts.ttf?lhqpxj") format("truetype"), url("../iconfonts/iconfonts.woff?lhqpxj") format("woff"), url("../iconfonts/iconfonts.svg?lhqpxj#iconfonts") format("svg");
@@ -219,7 +267,7 @@ input[type=number] {
 
 @media (max-width: 1200px) {
   ._first-title {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+    font-size: calc(15px + 1 * ((100vw - 320px) / 880));
   }
 }
 
@@ -248,6 +296,12 @@ input[type=number] {
 @media (max-width: 1200px) {
   ._second-title {
     line-height: calc(22px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (max-width: 768.2px) {
+  ._second-title {
+    font-weight: 700;
   }
 }
 
@@ -547,8 +601,19 @@ body._lock-scroll {
 
 @media (min-width: 768.2px) {
   .header {
+    /* Если меньше контейнера */
+    min-height: 80px;
     z-index: 1000;
   }
+}
+
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .header {
+    min-height: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (min-width: 768.2px) {
   .header._scroll .header__wrapper {
     position: fixed;
     left: 0;
@@ -1139,6 +1204,12 @@ body._lock-scroll {
   color: #2A2A2A;
 }
 
+@media (max-width: 768.2px) {
+  .header-search__input {
+    font-weight: 400;
+  }
+}
+
 @media (max-width: 552.2px) {
   .header-search__input {
     height: 100%;
@@ -1175,6 +1246,21 @@ body._lock-scroll {
   font-weight: 500;
   line-height: 118.75%;
   color: #999999;
+}
+
+@media (max-width: 768.2px) {
+  .header-search__input::-webkit-input-placeholder {
+    font-weight: 400;
+  }
+  .header-search__input:-ms-input-placeholder {
+    font-weight: 400;
+  }
+  .header-search__input::-ms-input-placeholder {
+    font-weight: 400;
+  }
+  .header-search__input::placeholder {
+    font-weight: 400;
+  }
 }
 
 @media (min-width: 768.2px) {
@@ -1330,7 +1416,7 @@ body._lock-scroll {
   background-color: #7FAD39;
   font-family: 'Cerebri Sans Pro';
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 120%;
   color: #fff;
 }
@@ -1520,7 +1606,11 @@ body._lock-scroll {
 }
 
 .header-user__title {
+  white-space: nowrap;
+  font-family: 'Cerebri Sans Pro';
   font-size: 20px;
+  font-weight: 600;
+  line-height: 121.42857%;
   color: #2A2A2A;
 }
 
@@ -1609,7 +1699,7 @@ body._lock-scroll {
 }
 
 .header-user__item._exit {
-  font-weight: 600;
+  font-weight: 900;
 }
 
 @media (min-width: 768.2px) {
@@ -1641,8 +1731,11 @@ body._lock-scroll {
 @media (max-width: 768.2px) {
   .header-user__item {
     padding: 10px 0px;
+    white-space: nowrap;
+    font-family: 'Cerebri Sans Pro';
     /* Если меньше контейнера */
     font-size: 17px;
+    font-weight: 500;
     line-height: 117.64706%;
     color: #2A2A2A;
   }
@@ -2052,6 +2145,7 @@ body._lock-scroll {
   .menu-categories__btn {
     background-color: #7FAD39;
     font-size: 15px;
+    font-weight: 600;
     color: #fff;
   }
 }
@@ -3264,6 +3358,12 @@ body._lock-scroll {
   }
 }
 
+@media (max-width: 768.2px) {
+  .sale-slider__precent {
+    font-weight: 700;
+  }
+}
+
 .sale-slider__buy-more {
   font-family: 'Cerebri Sans Pro';
   /* Если меньше контейнера */
@@ -3279,6 +3379,12 @@ body._lock-scroll {
   }
 }
 
+@media (max-width: 768.2px) {
+  .sale-slider__buy-more {
+    font-weight: 600;
+  }
+}
+
 .sale-slider__name {
   font-family: 'Cerebri Sans Pro';
   /* Если меньше контейнера */
@@ -3291,6 +3397,12 @@ body._lock-scroll {
 @media (max-width: 1200px) {
   .sale-slider__name {
     font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (max-width: 768.2px) {
+  .sale-slider__name {
+    font-weight: 400;
   }
 }
 
@@ -3364,6 +3476,12 @@ body._lock-scroll {
   }
   .sale-slider__btn:hover {
     background-color: #98c751;
+  }
+}
+
+@media (max-width: 768.2px) {
+  .sale-slider__btn {
+    font-weight: 600;
   }
 }
 
@@ -3766,13 +3884,19 @@ body._lock-scroll {
 
 .products-slider-item__label {
   margin-right: 15px;
-  padding: 8px 7px;
+  padding: 6px 7px;
   background-color: #7FAD39;
   font-family: 'Cerebri Sans Pro';
   font-size: 12px;
   font-weight: 800;
   line-height: 183.33333%;
   color: #fff;
+}
+
+@media (max-width: 768.2px) {
+  .products-slider-item__label {
+    font-weight: 600;
+  }
 }
 
 .products-slider-item__favorites {
@@ -3902,6 +4026,12 @@ body._lock-scroll {
   }
   .products-slider-item__name:hover {
     color: #7FAD39;
+  }
+}
+
+@media (max-width: 768.2px) {
+  .products-slider-item__name {
+    font-weight: 700;
   }
 }
 
@@ -4253,6 +4383,7 @@ body._lock-scroll {
     max-width: 150px;
     /* Если меньше контейнера */
     font-size: 28px;
+    font-weight: 700;
   }
 }
 
@@ -4346,13 +4477,13 @@ body._lock-scroll {
 
 @media (max-width: 1200px) {
   .value-column-little__btn {
-    padding-right: calc(15px + 5 * ((100vw - 320px) / 880));
+    padding-right: calc(10px + 10 * ((100vw - 320px) / 880));
   }
 }
 
 @media (max-width: 1200px) {
   .value-column-little__btn {
-    padding-left: calc(15px + 5 * ((100vw - 320px) / 880));
+    padding-left: calc(10px + 10 * ((100vw - 320px) / 880));
   }
 }
 
@@ -4375,6 +4506,12 @@ body._lock-scroll {
   }
   .value-column-little__btn:hover {
     background-color: #3b3b3b;
+  }
+}
+
+@media (max-width: 768.2px) {
+  .value-column-little__btn {
+    font-weight: 600;
   }
 }
 
@@ -4402,6 +4539,12 @@ body._lock-scroll {
 @media (max-width: 500.2px) {
   .value-column-big__image {
     padding-bottom: 32%;
+  }
+}
+
+@media (max-width: 375.2px) {
+  .value-column-big__image {
+    padding-bottom: 42%;
   }
 }
 
@@ -4454,6 +4597,7 @@ body._lock-scroll {
 }
 
 .value-column-big__title {
+  text-align: center;
   font-family: 'Cerebri Sans Pro';
   /* Если меньше контейнера */
   font-size: 24px;
@@ -4491,6 +4635,7 @@ body._lock-scroll {
   .value-column-big__title {
     /* Если меньше контейнера */
     margin-bottom: 23px;
+    font-weight: 600;
   }
 }
 
@@ -4526,6 +4671,12 @@ body._lock-scroll {
   }
   .value-column-big__btn:hover {
     background-color: rgba(127, 173, 57, 0.8);
+  }
+}
+
+@media (max-width: 768.2px) {
+  .value-column-big__btn {
+    font-weight: 600;
   }
 }
 
