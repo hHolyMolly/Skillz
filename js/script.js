@@ -1,154 +1,154 @@
-//< " ВЫПАДАЮЩИЙ СПИСОК ПОЛЬЗОВАТЕЛЯ " >=============================================================================================================>//
-function userShow() {
-	const userBtn = document.querySelector(".header-user__dropdown");
-	const userBody = document.querySelector(".header-user__body");
+//< " СКРИПТЫ ДЛЯ ХЕДЕРА (БУРГЕР МЕНЮ, ПОКАЗ ПОИСКОВОЙ СТРОКИ, ВЫПАДАЮЩИЕ СПИСКИ И Т.Д.) " >=============================================================================================================>//
+function actionsHeader() {
 
-	userBtn.addEventListener("click", function () {
-		userBtn.classList.toggle("_active");
-		userBody.classList.toggle("_active");
+	function мenuBurger() {
+		const menuBody = document.querySelector(".header-menu__body");
+		const menuBurger = document.querySelector(".header-menu__burger");
+		const menuWrapper = document.querySelector(".header-menu__wrapper");
 
-		if (window.innerWidth < 768.2) {
-			document.body.classList.toggle("_lock-scroll");
-		}
-	});
+		const body = document.body;
 
-	document.addEventListener("click", function (e) {
-		const elementTarget = e.target;
+		menuBurger.addEventListener("click", function () {
+			menuBody.classList.add("_active");
+			menuWrapper.classList.add("_active");
+			body.classList.add("_lock-scroll");
+		})
 
-		if (userBtn.classList.contains("_active") && userBody.classList.contains("_active") && !elementTarget.closest(".header-action__user")
-			|| elementTarget.closest(".header-user__close")) {
-			userBtn.classList.remove("_active");
-			userBody.classList.remove("_active");
-			document.body.classList.remove("_lock-scroll");
-		}
-	});
+		document.addEventListener("click", function (e) {
+			const elementTarget = e.target;
 
-	document.addEventListener("keyup", function (e) {
-		if (e.code === "Escape") {
-			userBtn.classList.remove("_active");
-			userBody.classList.remove("_active");
-		}
-	});
-}
-userShow()
-
-//< " МЕНЮ БУРГЕР " >=============================================================================================================>//
-function мenuBurger() {
-	const menuBody = document.querySelector(".header-menu__body");
-	const menuBurger = document.querySelector(".header-menu__burger");
-	const menuWrapper = document.querySelector(".header-menu__wrapper");
-
-	const body = document.body;
-
-	menuBurger.addEventListener("click", function () {
-		menuBody.classList.add("_active");
-		menuWrapper.classList.add("_active");
-		body.classList.add("_lock-scroll");
-	})
-
-	document.addEventListener("click", function (e) {
-		const elementTarget = e.target;
-
-		if (elementTarget.closest(".header-menu__wrapper") || elementTarget.closest(".header-menu__close") || elementTarget.closest(".header-menu__logo")) {
-			menuBody.classList.remove("_active");
-			menuWrapper.classList.remove("_active");
-			body.classList.remove("_lock-scroll");
-		}
-	});
-}
-мenuBurger()
-
-//< " ПОИСКОВОЙ ЗАПРОС ПО КЛИКУ НА КНОПКУ " >=============================================================================================================>//
-function showSearch() {
-	const searchOpen = document.querySelector(".header-search__open");
-	const searchBody = document.querySelector(".header-search__item");
-
-	searchOpen.addEventListener("click", function () {
-		searchBody.classList.toggle('_active');
-	});
-
-	document.addEventListener("click", function (e) {
-		const elementTarget = e.target;
-
-		if (!elementTarget.closest(".header-search") && searchBody.classList.contains('_active') && window.innerWidth < 552.2) {
-			searchBody.classList.remove('_active');
-			searchOpen.style.display = "flex";
-		}
-	});
-}
-showSearch()
-
-//< " ДОБАВЛЕНИЕ КЛАССА ХЕДЕРУ ПРИ СКРОЛЛЕ " >=============================================================================================================>//
-function scrollHeader() {
-
-	const header = document.querySelector('.header');
-
-	const callback = function (entries, observer) {
-		if (entries[0].isIntersecting) {
-			header.classList.remove('_scroll');
-		} else {
-			header.classList.add('_scroll');
-		}
-	};
-
-	const headerObserver = new IntersectionObserver(callback);
-	headerObserver.observe(header);
-
-}
-scrollHeader()
-
-
-//< " ДОБАВЛЕНИЕ КЛАССА ХЕДЕРУ ПРИ СКРОЛЛЕ " >=============================================================================================================>//
-function menuCategories() {
-	const categoriesBtn = document.querySelector(".menu-categories__btn");
-	const categoriesList = document.querySelector(".menu-categories__body");
-	const body = document.body;
-
-	categoriesBtn.addEventListener("click", function () {
-
-		if (window.innerWidth < 768.2) {
-			categoriesBtn.classList.toggle("_active");
-			categoriesList.classList.toggle("_active");
-			body.classList.toggle("_lock-scroll");
-		}
-	});
-
-	const categoriesLinks = document.querySelectorAll(".menu-categories__link");
-
-	if (categoriesLinks.length > 0) {
-		categoriesLinks.forEach(categoriesLink => {
-			categoriesLink.addEventListener("click", function (e) {
-
-				if (window.innerWidth < 768.2) {
-					categoriesLink.parentElement.classList.toggle("_active");
-					e.preventDefault();
-				}
-
-			});
-
-			const categoriesBackBtns = document.querySelectorAll(".menu-categories-sub__back");
-
-			categoriesBackBtns.forEach(categoriesBackBtn => {
-				categoriesBackBtn.addEventListener("click", function () {
-					categoriesLink.parentElement.classList.remove("_active");
-				});
-			});
-
-			const categoriesClose = document.querySelector(".menu-categories__close");
-
-			categoriesClose.addEventListener("click", function () {
-
-				if (window.innerWidth < 768.2) {
-					categoriesBtn.classList.remove("_active");
-					categoriesList.classList.remove("_active");
-					body.classList.remove("_lock-scroll");
-					categoriesLink.parentElement.classList.remove("_active");
-				}
-			});
+			if (elementTarget.closest(".header-menu__wrapper") || elementTarget.closest(".header-menu__close") || elementTarget.closest(".header-menu__logo")) {
+				menuBody.classList.remove("_active");
+				menuWrapper.classList.remove("_active");
+				body.classList.remove("_lock-scroll");
+			}
 		});
 	}
+	мenuBurger()
+
+	function showSearch() {
+		const searchOpen = document.querySelector(".header-search__open");
+		const searchBody = document.querySelector(".header-search__item");
+
+		searchOpen.addEventListener("click", function () {
+			searchBody.classList.toggle('_active');
+		});
+
+		document.addEventListener("click", function (e) {
+			const elementTarget = e.target;
+
+			if (!elementTarget.closest(".header-search") && searchBody.classList.contains('_active') && window.innerWidth < 552.2) {
+				searchBody.classList.remove('_active');
+				searchOpen.style.display = "flex";
+			}
+		});
+	}
+	showSearch()
+
+	function menuCategories() {
+		const categoriesBtn = document.querySelector(".menu-categories__btn");
+		const categoriesList = document.querySelector(".menu-categories__body");
+		const body = document.body;
+
+		categoriesBtn.addEventListener("click", function () {
+
+			if (window.innerWidth < 768.2) {
+				categoriesBtn.classList.toggle("_active");
+				categoriesList.classList.toggle("_active");
+				body.classList.toggle("_lock-scroll");
+			}
+		});
+
+		const categoriesLinks = document.querySelectorAll(".menu-categories__link");
+
+		if (categoriesLinks.length > 0) {
+			categoriesLinks.forEach(categoriesLink => {
+				categoriesLink.addEventListener("click", function (e) {
+
+					if (window.innerWidth < 768.2) {
+						categoriesLink.parentElement.classList.toggle("_active");
+						e.preventDefault();
+					}
+
+				});
+
+				const categoriesBackBtns = document.querySelectorAll(".menu-categories-sub__back");
+
+				categoriesBackBtns.forEach(categoriesBackBtn => {
+					categoriesBackBtn.addEventListener("click", function () {
+						categoriesLink.parentElement.classList.remove("_active");
+					});
+				});
+
+				const categoriesClose = document.querySelector(".menu-categories__close");
+
+				categoriesClose.addEventListener("click", function () {
+
+					if (window.innerWidth < 768.2) {
+						categoriesBtn.classList.remove("_active");
+						categoriesList.classList.remove("_active");
+						body.classList.remove("_lock-scroll");
+						categoriesLink.parentElement.classList.remove("_active");
+					}
+				});
+			});
+		}
+	}
+	menuCategories()
+
+	function scrollHeader() {
+
+		const header = document.querySelector('.header');
+
+		const callback = function (entries, observer) {
+			if (entries[0].isIntersecting) {
+				header.classList.remove('_scroll');
+			} else {
+				header.classList.add('_scroll');
+			}
+		};
+
+		const headerObserver = new IntersectionObserver(callback);
+		headerObserver.observe(header);
+
+	}
+	scrollHeader()
+
+	function userShow() {
+		const userBtn = document.querySelector(".header-user__dropdown");
+		const userBody = document.querySelector(".header-user__body");
+
+		userBtn.addEventListener("click", function () {
+			userBtn.classList.toggle("_active");
+			userBody.classList.toggle("_active");
+
+			if (window.innerWidth < 768.2) {
+				document.body.classList.toggle("_lock-scroll");
+			}
+		});
+
+		document.addEventListener("click", function (e) {
+			const elementTarget = e.target;
+
+			if (userBtn.classList.contains("_active") && userBody.classList.contains("_active") && !elementTarget.closest(".header-action__user")
+				|| elementTarget.closest(".header-user__close")) {
+				userBtn.classList.remove("_active");
+				userBody.classList.remove("_active");
+				document.body.classList.remove("_lock-scroll");
+			}
+		});
+
+		document.addEventListener("keyup", function (e) {
+			if (e.code === "Escape") {
+				userBtn.classList.remove("_active");
+				userBody.classList.remove("_active");
+			}
+		});
+	}
+	userShow()
+
 }
-menuCategories()
+actionsHeader()
 
 //< " ОСНОВНОЙ СЛАЙДЕР И СЛАЙДЕР КАТЕГОРИЙ " >=============================================================================================================>//
 new Swiper(".sale-slider", {
@@ -160,7 +160,7 @@ new Swiper(".sale-slider", {
 
 	// parallax: true,
 	autoplay: {
-		delay: 3000,
+		delay: 3500,
 		disableOnInteraction: false,
 	},
 
@@ -223,9 +223,11 @@ new Swiper(".products-slider", {
 
 	breakpoints: {
 		992.2: {
+			touchRatio: 0,
 			slidesPerView: 5,
 		},
 		768.2: {
+			touchRatio: 1,
 			slidesPerView: 4,
 		},
 		552.2: {
@@ -275,7 +277,7 @@ function products() {
 
 						if (productInpt.classList.contains(productDataName)) {
 							let qty = parseInt(productInpt.value);
-							if (productInpt.value > 1) {
+							if (productInpt.value > 10) {
 								qty = qty - 1;
 							}
 							productInpt.value = qty;
@@ -304,6 +306,7 @@ function products() {
 
 }
 products()
+
 
 //< " ДИНАМИЧЕСКИЙ АДАПТИВ " >=============================================================================================================>//
 function dynamicAdaptive() {
