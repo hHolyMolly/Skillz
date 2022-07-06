@@ -1,1 +1,3558 @@
-@charset "UTF-8";*,:after,:before{box-sizing:border-box}:active,:focus,a:active,a:focus{outline:0}aside,footer,header,nav{display:block}html{font-size:14px}body,html{height:100%;width:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}button,input,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:hover,a:visited{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}input{-webkit-appearance:none;border-radius:0}@font-face{font-family:"Cerebri Sans Pro";src:url(../fonts/CerebriSansPro-Bold.eot);src:local("☺"),url(../fonts/CerebriSansPro-Bold.woff) format("woff"),url(../fonts/CerebriSansPro-Bold.ttf) format("truetype"),url(../fonts/CerebriSansPro-Bold.svg) format("svg");font-weight:700;font-style:normal}@font-face{font-family:"Cerebri Sans Pro";src:url(../fonts/CerebriSansPro-ExtraBold.eot);src:local("☺"),url(../fonts/CerebriSansPro-ExtraBold.woff) format("woff"),url(../fonts/CerebriSansPro-ExtraBold.ttf) format("truetype"),url(../fonts/CerebriSansPro-ExtraBold.svg) format("svg");font-weight:900;font-style:normal}@font-face{font-family:"Cerebri Sans Pro";src:url(../fonts/CerebriSansPro-Light.eot);src:local("☺"),url(../fonts/CerebriSansPro-Light.woff) format("woff"),url(../fonts/CerebriSansPro-Light.ttf) format("truetype"),url(../fonts/CerebriSansPro-Light.svg) format("svg");font-weight:300;font-style:normal}@font-face{font-family:"Cerebri Sans Pro";src:url(../fonts/CerebriSansPro-Medium.eot);src:local("☺"),url(../fonts/CerebriSansPro-Medium.woff) format("woff"),url(../fonts/CerebriSansPro-Medium.ttf) format("truetype"),url(../fonts/CerebriSansPro-Medium.svg) format("svg");font-weight:500;font-style:normal}@font-face{font-family:"Cerebri Sans Pro";src:url(../fonts/CerebriSansPro-Regular.eot);src:local("☺"),url(../fonts/CerebriSansPro-Regular.woff) format("woff"),url(../fonts/CerebriSansPro-Regular.ttf) format("truetype"),url(../fonts/CerebriSansPro-Regular.svg) format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Cerebri Sans Pro";src:url(../fonts/CerebriSansPro-SemiBold.eot);src:local("☺"),url(../fonts/CerebriSansPro-SemiBold.woff) format("woff"),url(../fonts/CerebriSansPro-SemiBold.ttf) format("truetype"),url(../fonts/CerebriSansPro-SemiBold.svg) format("svg");font-weight:600;font-style:normal}@font-face{font-family:"iconfonts";src:url(../iconfonts/iconfonts.eot?lhqpxj);src:url(../iconfonts/iconfonts.eot?lhqpxj#iefix) format("embedded-opentype"),url(../iconfonts/iconfonts.ttf?lhqpxj) format("truetype"),url(../iconfonts/iconfonts.woff?lhqpxj) format("woff"),url(../iconfonts/iconfonts.svg?lhqpxj#iconfonts) format("svg");font-weight:400;font-style:normal;font-display:block}[class*=" _icon-"]:before,[class^=_icon-]:before{font-family:"iconfonts"!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}._icon-arrow:before{content:"\e900"}._icon-email:before{content:"\e901"}._icon-facebook:before{content:"\e902"}._icon-favorites:before{content:"\e903"}._icon-full-arrow:before{content:"\e904"}._icon-linkedin:before{content:"\e905"}._icon-location:before{content:"\e906"}._icon-phone:before{content:"\e907"}._icon-search:before{content:"\e908"}._icon-shop:before{content:"\e909"}._icon-twitter:before{content:"\e90a"}._icon-user:before{content:"\e90b"}._icon-whatsapp:before{content:"\e90c"}.banner-text{font:600 12px/116.6666666667% "Cerebri Sans Pro";color:#fff}@media (max-width:768.2px){.banner-text{font-size:16px;color:#2a2a2a;ine-height:114.2857142857%}}@media (max-width:768.2px) and (max-width:1200px){.banner-text{font-size:calc(14px + 2*((100vw - 320px)/880))}}._text-item{display:flex;flex-direction:column}._first-title{font:500 16px/30px "Cerebri Sans Pro";color:#7fad39}@media (max-width:1200px){._first-title{font-size:calc(15px + 1*((100vw - 320px)/880));line-height:calc(22px + 8*((100vw - 320px)/880))}}._second-title{font:800 24px/30px "Cerebri Sans Pro";color:#2a2a2a}@media (max-width:1200px){._second-title{font-size:calc(20px + 4*((100vw - 320px)/880));line-height:calc(22px + 8*((100vw - 320px)/880))}}@media (max-width:768.2px){._second-title{font-weight:700}}._btn-click:active{transform:translateY(2px)}._ibg{position:relative}._ibg img{position:absolute;width:100%;height:100%;top:0;left:0;-o-object-fit:cover;object-fit:cover}body.ie ._ibg{background-position:center;background-size:cover;background-repeat:no-repeat}body.ie ._ibg img{width:0;height:0;opacity:0;visibility:hidden}body{font:14px Arial;background:#e5e5e5}body._lock-scroll{overflow:hidden}.wrapper{min-height:100%;display:flex;flex-direction:column;overflow-x:hidden}.content{flex:1 1 auto}._container{padding:0 15px;margin:0 auto;max-width:1200px}.banner__wrapper{background:#2a2a2a}@media (max-width:768.2px){.banner__wrapper{display:none}}.banner__body,.banner__email{display:flex;align-items:center}.banner__body{min-height:47px;justify-content:center}.banner__email{margin-right:15px;padding:6px;border-radius:4px}@media (max-width:1200px){.banner__email{margin-right:calc(10px + 5*((100vw - 320px)/880))}}@media (any-hover:hover){.banner__email{transition:background-color .2s ease 0s}.banner__email:hover{background-color:#3b3b3b}}@media (max-width:768.2px){.banner__email{margin-right:0;padding:8px 15px;width:100%;justify-content:flex-start;border-radius:none}}.banner__item{padding-left:20px;position:relative}@media (max-width:1200px){.banner__item{padding-left:calc(10px + 10*((100vw - 320px)/880))}}.banner__item:before{background:#fff;content:"";width:1px;height:14px;position:absolute;top:0;left:0;pointer-events:none;opacity:.5}.banner__icons{row-gap:5px;-moz-column-gap:20px;column-gap:20px;display:flex;align-items:center}@media (max-width:1200px){.banner__icons{-moz-column-gap:calc(10px + 10*((100vw - 320px)/880));column-gap:calc(10px + 10*((100vw - 320px)/880))}}@media (min-width:768.2px){.banner__icons{margin-left:25px}}@media (min-width:768.2px) and (max-width:1200px){.banner__icons{margin-left:calc(15px + 10*((100vw - 320px)/880))}}@media (max-width:768.2px){.banner__icons{padding:0 15px;margin-left:0;flex-direction:column;align-items:flex-start}}.banner-email__icon{margin-right:8px;font-size:16px;color:#fff}@media (max-width:1200px){.banner-email__icon{font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.banner-email__icon{transition:color .2s ease 0s}}@media (max-width:768.2px){.banner-email__icon{color:#2a2a2a}}@media (any-hover:hover){.banner-email__text{transition:color .2s ease 0s}}.banner-icons__item{padding:6px;display:flex;justify-content:center;align-items:center;border-radius:4px;font-size:18px;color:#fff}@media (max-width:1200px){.banner-icons__item{font-size:calc(16px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.banner-icons__item{transition:background-color .2s ease 0s}.banner-icons__item:hover{background-color:#3b3b3b}}@media (max-width:768.2px){.banner-icons__item{padding:8px 0;width:100%;justify-content:flex-start;color:#2a2a2a}}@media (min-width:768.2px){.banner-icons__text{display:none}}@media (max-width:768.2px){.banner-icons__text{margin-left:8px}}.header{position:relative}@media (min-width:768.2px){.header{min-height:80px;z-index:1000}}@media (min-width:768.2px) and (max-width:1200px){.header{min-height:calc(60px + 20*((100vw - 320px)/880))}}@media (min-width:768.2px){.header._scroll .header__wrapper{position:fixed;left:0;top:0;-webkit-animation-duration:.6s;animation-duration:.6s;-webkit-animation-name:scrollAnimation;animation-name:scrollAnimation}@-webkit-keyframes scrollAnimation{0%{transform:translateY(-100%)}to{transform:translateY(0)}}@keyframes scrollAnimation{0%{transform:translateY(-100%)}to{transform:translateY(0)}}}@media (max-width:768.2px){.header{z-index:400}}.header__wrapper{background:#fff;width:100%;box-shadow:0 1px 0 #cecece}@media (max-width:768.2px){.header__wrapper{width:100%;position:fixed;top:0;left:0}}.header__body{min-height:80px;display:flex;justify-content:space-between;align-items:center;position:relative}@media (max-width:1200px){.header__body{min-height:calc(60px + 20*((100vw - 320px)/880))}}.header__logo{margin-right:45px;display:inline-flex;flex-shrink:0;flex-basis:118px;order:1}@media (max-width:1200px){.header__logo{margin-right:calc(10px + 35*((100vw - 320px)/880));flex-basis:calc(90px + 28*((100vw - 320px)/880))}}.header__logo img{max-width:100%}.header__location{order:2}@media (min-width:768.2px){.header__location{margin-right:35px}}@media (min-width:768.2px) and (max-width:1200px){.header__location{margin-right:calc(10px + 25*((100vw - 320px)/880))}}@media (max-width:768.2px){.header__location{display:none}}.header__search{width:100%}@media (min-width:552.2px){.header__search{margin-right:15px;order:3}}@media (min-width:552.2px) and (max-width:1200px){.header__search{margin-right:calc(10px + 5*((100vw - 320px)/880))}}.header__action{-moz-column-gap:20px;column-gap:20px;display:flex;align-items:center}@media (max-width:1200px){.header__action{-moz-column-gap:calc(5px + 15*((100vw - 320px)/880));column-gap:calc(5px + 15*((100vw - 320px)/880))}}@media (min-width:552.2px){.header__action{order:4}}@media (max-width:552.2px){.header__action{order:3}}.header-location__select{position:relative}@media (any-hover:hover){.header-location__select:hover .header-location__list{pointer-events:auto;opacity:1;transform:translateY(0)}}@media (any-hover:hover) and (min-width:768.2px){.header-location__select:hover .header-location__btn{color:#7fad39}}@media (any-hover:hover){.header-location__select:hover .header-location__btn .header-location__arrow{transform:rotate(270deg)}}.header-location__select._active .header-location__list{display:block}.header-location__btn{background:0 0;padding:13px 0;-moz-column-gap:8px;column-gap:8px;display:flex;align-items:center;color:#a9a9a9}@media (any-hover:hover){.header-location__btn{transition:color .2s ease 0s}.header-location__btn:hover{color:#7fad39}}@media (max-width:768.2px){.header-location__btn{padding:8px 0;width:100%;color:#2a2a2a}}@media (min-width:768.2px){.header-location__btn._active{color:#7fad39}}.header-location__btn._active .header-location__arrow{transform:rotate(270deg)}.header-location__icon{font-size:14px}@media (max-width:768.2px){.header-location__icon{font-size:18px}}.header-location__selected{font:500 15px/121.4285714286% "Cerebri Sans Pro";white-space:nowrap}@media (max-width:1200px){.header-location__selected{font-size:calc(12px + 3*((100vw - 320px)/880))}}@media (max-width:768.2px){.header-location__selected{font-size:16px;font-weight:600}}@media (max-width:768.2px) and (max-width:1200px){.header-location__selected{font-size:calc(14px + 2*((100vw - 320px)/880))}}.header-location__arrow{transform:rotate(90deg);transition:transform .2s ease 0s;font-size:8px}@media (max-width:768.2px){.header-location__arrow{font-size:10px}}.header-location__list{background:#fff;width:220px;display:flex;flex-direction:column;position:absolute;left:0;pointer-events:none;opacity:0;border-radius:4px;transform:translateY(10%);box-shadow:0 0 5px 1px #d8d8d8;transition:opacity .2s ease 0s,transform .2s ease 0s}@media (max-width:768.2px){.header-location__list{margin-top:0;display:none;position:relative;pointer-events:auto;opacity:1;transform:translateY(0);box-shadow:none;border-radius:none}}.header-location__item{padding:10px;cursor:pointer}@media (min-width:768.2px){.header-location__item:not(:last-child){border-bottom:1px solid #ebebeb}}@media (any-hover:hover){.header-location__item{transition:background-color .2s ease 0s}.header-location__item:hover{background-color:rgba(245,252,245,.781)}.header-location__item:hover .header-location__title{color:#7fad39}}@media (max-width:768.2px){.header-location__item{padding:6px 0;font-size:16px;line-height:112.5%}}@media (max-width:768.2px) and (max-width:1200px){.header-location__item{font-size:calc(14px + 2*((100vw - 320px)/880))}}.header-location__title{font:600 17px/111.7647058824% "Cerebri Sans Pro";margin-bottom:8px;transition:color .2s ease 0s;color:#383838}@media (max-width:1200px){.header-location__title{font-size:calc(14px + 3*((100vw - 320px)/880))}}.header-location__text{display:flex}.header-location__text p{font:500 15px/121.4285714286% "Cerebri Sans Pro";padding-left:6px;width:100%;color:#383838}@media (max-width:1200px){.header-location__text p{font-size:calc(12px + 3*((100vw - 320px)/880))}}.header-location__text ._icon-location{position:relative;top:2px;font-size:14px;color:#383838}.header-search__item{background:#f7f7f7;max-width:340px;width:100%;display:flex;align-items:center;overflow:hidden;border-radius:3px}@media (max-width:552.2px){.header-search__item{max-width:none;min-height:60px;position:absolute;bottom:-76px;left:0;z-index:2;opacity:0;pointer-events:none;transform:translateY(10%);box-shadow:0 0 8px 3px rgba(53,53,53,.55);transition:transform .3s ease 0s,opacity .3s ease 0s}}@media (max-width:552.2px) and (max-width:1200px){.header-search__item{min-height:calc(40px + 20*((100vw - 320px)/880));bottom:calc(-56px + -20*((100vw - 320px)/880))}}@media (max-width:552.2px){.header-search__item._active{opacity:1;pointer-events:auto;transform:translateY(0)}}.header-search__btn,.header-search__form{width:100%;display:flex;align-items:center}.header-search__btn{background:0 0;width:36px;height:36px;justify-content:center;font-size:17px;color:#999}@media (max-width:552.2px){.header-search__btn{width:60px;height:60px;font-size:20px}}@media (max-width:552.2px) and (max-width:1200px){.header-search__btn{width:calc(40px + 20*((100vw - 320px)/880));height:calc(40px + 20*((100vw - 320px)/880))}}@media (min-width:552.2px){.header-search__open{display:none}}@media (max-width:552.2px){.header-search__open{width:32px;height:32px;display:flex;justify-content:center;align-items:center;position:relative;z-index:3;background-color:transparent;font-size:22px;color:#2a2a2a}}.header-search__input{font:500 16px/118.75% "Cerebri Sans Pro";background:0 0;height:36px;padding:0 10px 0 5px;width:100%;color:#2a2a2a}@media (max-width:768.2px){.header-search__input{font-weight:400}}@media (max-width:552.2px){.header-search__input{height:100%}}.header-search__input::-moz-placeholder{font:500 16px/118.75% "Cerebri Sans Pro";color:#999}.header-search__input:-ms-input-placeholder{font:500 16px/118.75% "Cerebri Sans Pro";color:#999}.header-search__input::placeholder{font:500 16px/118.75% "Cerebri Sans Pro";color:#999}@media (max-width:768.2px){.header-search__input::-moz-placeholder{font-weight:400}.header-search__input:-ms-input-placeholder{font-weight:400}.header-search__input::placeholder{font-weight:400}}@media (min-width:768.2px){.header-action__elem{content:"";width:2px;height:24px;pointer-events:none;background-color:rgba(42,42,42,.2)}}.header-action__phone{-moz-column-gap:13px;column-gap:13px;display:flex;align-items:center;position:relative;color:#2a2a2a}@media (any-hover:hover){.header-action__phone{transition:color .2s ease 0s}.header-action__phone:hover{color:#7fad39}}@media (max-width:992.2px){.header-action__phone{width:32px;height:32px;justify-content:center}}.header-action__favorites,.header-action__user{position:relative}@media (any-hover:hover){.header-action__favorites:hover .header-favorites__icon{color:red}}@media (min-width:768.2px){.header-action__menu{display:none}}@media (max-width:768.2px){.header-action__menu{display:block}}.header-phone__icon{font-size:18px}@media (max-width:992.2px){.header-phone__icon{width:32px;height:32px;display:flex;justify-content:center;align-items:center}}.header-phone__text,.header-user__dropdown span{font:500 16px/118.75% "Cerebri Sans Pro";white-space:nowrap}@media (max-width:1200px){.header-phone__text{font-size:calc(12px + 4*((100vw - 320px)/880))}}@media (max-width:992.2px){.header-phone__text{display:none}}.header-favorites__icon{width:32px;height:32px;display:flex;justify-content:center;align-items:center;font-size:20px;color:#2a2a2a}@media (any-hover:hover){.header-favorites__icon{transition:color .2s ease 0s}}.header-favorites__item{font:400 10px/120% "Cerebri Sans Pro";background:#7fad39;width:14px;height:14px;display:flex;justify-content:center;align-items:center;position:absolute;top:0;right:-1px;border-radius:50%;border:1px solid #fff;color:#fff}.header-user__dropdown{background:#fff;-moz-column-gap:8px;column-gap:8px;display:flex;align-items:center;color:#2a2a2a}@media (max-width:1200px){.header-user__dropdown span{font-size:calc(12px + 4*((100vw - 320px)/880))}}@media (any-hover:hover){.header-user__dropdown{transition:color .2s ease 0s}.header-user__dropdown:hover{color:#7fad39}}@media (max-width:768.2px){.header-user__dropdown span{display:none}}.header-user__dropdown._active{color:#7fad39}.header-user__dropdown._active .header-user__arrow{transform:rotate(270deg)}.header-user__icon{font-size:20px}@media (max-width:768.2px){.header-user__icon{width:32px;height:32px;display:flex;justify-content:center;align-items:center}}.header-user__arrow{transform:rotate(90deg);transition:transform .2s ease 0s;font-size:8px}@media (max-width:768.2px){.header-user__arrow{display:none}}@media (min-width:768.2px){.header-user__body{max-width:140px;width:100%;margin-top:10px;position:absolute;right:0;pointer-events:none;opacity:0;border-radius:4px;transform:translateY(10%);box-shadow:0 0 5px 1px #d8d8d8;transition:opacity .2s ease 0s,transform .2s ease 0s;background-color:#fff}.header-user__body._active{pointer-events:auto;opacity:1;transform:translateY(0)}}@media (max-width:768.2px){.header-user__body{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;transform:scale(.7);opacity:0;pointer-events:none;overflow:auto;box-shadow:0 0 9999px 9999px rgba(0,0,0,.8);transition:transform .3s ease 0s,opacity .3s ease 0s;background-color:#fff}.header-user__body._active{transform:scale(1);opacity:1;pointer-events:auto}}@media (min-width:768.2px){.header-user__top{display:none}}@media (max-width:768.2px){.header-user__top{width:100%;min-height:60px;padding:0 15px;display:flex;justify-content:space-between;align-items:center;position:-webkit-sticky;position:sticky;top:0;box-shadow:0 1px 0 #cecece;background-color:#fff}}.header-user__label{display:flex;align-items:center}.header-user__title{font:600 20px/121.4285714286% "Cerebri Sans Pro";white-space:nowrap;color:#2a2a2a}.header-user__close{background:0 0;width:30px;height:30px;display:flex;justify-content:center;align-items:center;border-radius:4px}@media (any-hover:hover){.header-user__close{transition:background-color .2s ease 0s}.header-user__close:hover{background-color:#eee}}.header-user__close span{background:0 0}.header-user__close span:after,.header-user__close span:before{background:#2a2a2a;content:"";width:25px;height:2px;position:absolute;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.header-user__close span:before{top:-8px;transform:rotate(45deg) translate(5px,6px)}.header-user__close span:after{top:8px;transform:rotate(-45deg) translate(5px,-6px)}.header-user__list{display:flex;flex-direction:column}@media (max-width:768.2px){.header-user__list{padding:10px 15px}}.header-user__item{letter-spacing:.2px}.header-user__item._exit{font-weight:900}@media (min-width:768.2px){.header-user__item{padding:7.5px 10px;cursor:pointer;white-space:nowrap;font-family:"Cerebri Sans Pro";font-size:15px;font-weight:500;line-height:121.4285714286%;color:#383838}}@media (min-width:768.2px) and (max-width:1200px){.header-user__item{font-size:calc(12px + 3*((100vw - 320px)/880))}}@media (min-width:768.2px){.header-user__item:not(:last-child){border-bottom:1px solid #ebebeb}}@media (max-width:768.2px){.header-user__item{padding:10px 0;white-space:nowrap;font-family:"Cerebri Sans Pro";font-size:17px;font-weight:500;line-height:117.6470588235%;color:#2a2a2a}}@media (max-width:768.2px) and (max-width:1200px){.header-user__item{font-size:calc(15px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.header-user__item{transition:color .2s ease 0s,background-color .2s ease 0s}.header-user__item:hover{background-color:rgba(245,252,245,.781);color:#7fad39}}.header-menu__burger{background:0 0;width:30px;height:30px;display:flex;justify-content:center;align-items:center}@media (any-hover:hover){.header-menu__burger{transition:background-color .2s ease 0s}.header-menu__burger:hover{background-color:#eee}}.header-menu__burger span,.header-menu__close span,.header-user__close span{width:25px;height:2px;display:flex;position:relative;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.header-menu__burger span{background:#2a2a2a}.header-menu__burger span:after,.header-menu__burger span:before{background:#2a2a2a;content:"";width:25px;height:2px;position:absolute;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.header-menu__burger span:before{top:-8px}.header-menu__burger span:after{top:8px}.header-menu__body,.header-menu__wrapper{width:100%;height:100%;position:fixed;top:0}.header-menu__wrapper{background:rgba(0,0,0,.6);left:0;z-index:500;opacity:0;pointer-events:none;transition:opacity .5s ease 0s}.header-menu__wrapper._active{opacity:1;pointer-events:auto}.header-menu__body{background:#fff;max-width:300px;left:-100%;z-index:600;overflow:auto;box-shadow:0 0 20px 7px rgba(0,0,0,.7);transition:left .5s ease 0s}@media (max-width:425.2px){.header-menu__body{max-width:none;box-shadow:none}}.header-menu__body._active{left:0}.header-menu__top{background:#fff;min-height:60px;padding:0 15px;display:flex;justify-content:space-between;align-items:center;position:-webkit-sticky;position:sticky;top:0;z-index:2;box-shadow:0 1px 0 #cecece}.header-menu__logo{background:0 0}.header-menu__close{background:0 0;width:30px;height:30px;display:flex;justify-content:center;align-items:center;border-radius:4px}@media (any-hover:hover){.header-menu__close{transition:background-color .2s ease 0s}.header-menu__close:hover{background-color:#eee}}.header-menu__close span{background:0 0}.header-menu__close span:after,.header-menu__close span:before{background:#2a2a2a;content:"";width:25px;height:2px;position:absolute;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.header-menu__close span:before{top:-8px;transform:rotate(45deg) translate(5px,6px)}.header-menu__close span:after{top:8px;transform:rotate(-45deg) translate(5px,-6px)}.header-menu__items{padding:15px 0}.menu__wrapper{background:#fff;box-shadow:0 1px 0 #cecece}@media (max-width:768.2px){.menu__wrapper{margin-top:80px;box-shadow:none;background-color:transparent}}@media (max-width:768.2px) and (max-width:1200px){.menu__wrapper{margin-top:calc(60px + 20*((100vw - 320px)/880))}}.menu__body{-moz-column-gap:40px;column-gap:40px;min-height:80px;display:flex;align-items:center}@media (max-width:1200px){.menu__body{-moz-column-gap:calc(15px + 25*((100vw - 320px)/880));column-gap:calc(15px + 25*((100vw - 320px)/880));min-height:calc(60px + 20*((100vw - 320px)/880))}}@media (max-width:768.2px){.menu__body{padding:10px 0 0;justify-content:space-between}}@media (min-width:768.2px){.menu__categories{position:relative}.menu__categories:hover .menu-categories__body{opacity:1;pointer-events:visible}.menu__categories:hover .menu-categories__btn{background-color:#eee}}@media (max-width:768.2px){.menu__categories{flex:1 1 100%}}.menu__items{flex:1 1 100%}@media (max-width:768.2px){.menu__items{display:none}}.menu__cart{background:#7fad39;padding-right:15px;padding-left:15px;-moz-column-gap:8px;column-gap:8px;height:50px;display:flex;align-items:center;color:#fff}@media (max-width:1200px){.menu__cart{padding-right:calc(10px + 5*((100vw - 320px)/880));padding-left:calc(10px + 5*((100vw - 320px)/880));height:calc(40px + 10*((100vw - 320px)/880))}}@media (any-hover:hover){.menu__cart{transition:background-color .2s ease 0s}.menu__cart:hover{background-color:#98c751}}@media (max-width:768.2px){.menu__cart{padding:10px 15px;height:none;background-color:#fff;color:#2a2a2a}}.menu-categories__btn{font:800 13px/125% "Cerebri Sans Pro";background:#f7f7f7;padding-left:25px;padding-right:25px;width:100%;height:50px;display:flex;justify-content:center;align-items:center;flex:0 0 14.75%;white-space:nowrap;color:#2a2a2a}.menu-categories__btn._active{background:#eee}@media (any-hover:hover){.menu-categories__btn{transition:background-color .2s ease 0s}}@media (max-width:768.2px){.menu-categories__btn{background-color:#7fad39;font-size:15px;font-weight:600;color:#fff}}.menu-categories__btn span,.menu-categories__btn span:after,.menu-categories__btn span:before{background:#2a2a2a;min-width:15px;height:2px;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.menu-categories__btn span{margin-right:8px;display:flex;position:relative}@media (max-width:768.2px){.menu-categories__btn span{margin-right:16px;min-width:17px;background-color:#fff}}.menu-categories__btn span:after,.menu-categories__btn span:before{content:"";position:absolute}@media (max-width:768.2px){.menu-categories__btn span:after,.menu-categories__btn span:before{background-color:#fff}}.menu-categories__btn span:before{top:-4px}@media (max-width:768.2px){.menu-categories__btn span:before{min-width:22px;top:-6px}}.menu-categories__btn span:after{top:4px}@media (max-width:768.2px){.menu-categories__btn span:after{min-width:12px;top:6px}}.menu-categories__body{z-index:999;pointer-events:none}@media (min-width:768.2px){.menu-categories__body{min-width:240px;min-height:100%;display:flex;flex-direction:column;position:absolute;left:0;opacity:0;border:1px solid #eee;transition:opacity .2s ease 0s;background-color:#fff}}@media (max-width:768.2px){.menu-categories__body{width:100%;height:100%;position:fixed;top:0;left:0;pointer-events:none;overflow-y:auto;opacity:0;box-shadow:0 0 9999px 9999px rgba(0,0,0,.6);transform:scale(.7);transition:opacity .3s ease 0s,transform .4s ease 0s;background-color:#fff}.menu-categories__body._active{opacity:1;pointer-events:auto;transform:scale(1)}}@media (min-width:768.2px){.menu-categories__top{display:none}}@media (max-width:768.2px){.menu-categories__top{padding:0 15px;width:100vw;min-height:80px;display:flex;justify-content:space-between;align-items:center;position:-webkit-sticky;position:sticky;top:0;z-index:2;overflow-y:0;border:1px solid #eee;background-color:#fff}}@media (max-width:768.2px) and (max-width:1200px){.menu-categories__top{min-height:calc(60px + 20*((100vw - 320px)/880))}}.menu-categories__title{font:600 18px "Cerebri Sans Pro";color:#2a2a2a}.menu-categories__close{background:0 0;width:30px;height:30px;display:flex;justify-content:center;align-items:center;border-radius:4px}.menu-categories__close span{background:0 0;width:20px;height:2px;display:flex;position:relative;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.menu-categories__close span:after,.menu-categories__close span:before{background:#2a2a2a;content:"";width:20px;height:2px;position:absolute;transition:top .2s ease-in-out 0s,transform .2s ease-in-out 0s}.menu-categories__close span:before{top:-8px;transform:rotate(45deg) translate(5px,6px)}.menu-categories__close span:after{top:8px;transform:rotate(-45deg) translate(5px,-6px)}.menu-categories__list{width:100%}.menu-categories__item{width:100%;display:flex;justify-content:space-between;align-items:center}@media (min-width:768.2px){.menu-categories__item:hover .menu-categories__sub-body{opacity:1;pointer-events:auto}.menu-categories__item:hover .menu-categories__link{background-color:rgba(245,252,245,.781);color:#7fad39}.menu-categories__item:hover .menu-categories__arrow{color:#7fad39}}@media (max-width:768.2px){.menu-categories__item._active .menu-categories__sub-body{display:flex}}@media (any-hover:hover){.menu-categories__item{transition:color .2s ease 0s}}.menu-categories__link{font:400 16px/118.75% "Cerebri Sans Pro";padding:10px 15px;width:100%;height:100%;display:flex;justify-content:space-between;align-items:center;transition:color .2s ease 0s;color:#2a2a2a}@media (max-width:1200px){.menu-categories__link{font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.menu-categories__link{transition:color .2s ease 0s,background-color .2s ease 0s}}.menu-categories__link-item{display:flex;align-items:center}@media (min-width:768.2px){.menu-categories__icon{margin-right:10px;flex:0 1 20px}.menu-categories__icon img{max-width:100%}}@media (max-width:768.2px){.menu-categories__icon{margin-right:10px;flex:0 1 25px}.menu-categories__icon img{max-width:100%}}.menu-categories__arrow{font-size:10px}@media (any-hover:hover){.menu-categories__arrow{transition:color .2s ease 0s}}@media (max-width:768.2px){.menu-categories__arrow{font-size:12px}}@media (any-hover:hover){.menu-categories__sub-body{transition:opacity .2s ease 0s}}@media (min-width:768.2px){.menu-categories__sub-body{max-width:350px;min-width:240px;width:100%;min-height:100%;position:absolute;top:0;left:100%;pointer-events:none;opacity:0;border:1px solid #eee;background-color:#fff}}@media (max-width:768.2px){.menu-categories__sub-body{margin-top:80px;width:100vw;height:100%;display:none;flex-direction:column;position:fixed;top:0;left:0;background-color:#fff}}@media (max-width:768.2px) and (max-width:1200px){.menu-categories__sub-body{margin-top:calc(60px + 20*((100vw - 320px)/880))}}@media (min-width:768.2px){.menu-categories-sub__top{display:none}}.menu-categories-sub__back{font:400 16px/125% "Cerebri Sans Pro";background:0 0;padding:15px;max-width:200px;width:100%;display:inline-flex;justify-content:flex-start;align-items:center;color:#2a2a2a}@media (max-width:1200px){.menu-categories-sub__back{max-width:calc(100px + 100*((100vw - 320px)/880))}}@media (min-width:768.2px){.menu-categories-sub__back{display:none}}.menu-categories-sub__back ._icon-arrow{margin-right:8px;position:relative;top:-1px;transform:rotate(180deg);font-size:12px}.menu-categories-sub__list{display:flex;flex-direction:column}.menu-categories-sub__item{font:400 16px/118.75% "Cerebri Sans Pro";padding:10px 15px;width:100%;display:block;color:#2a2a2a}@media (max-width:1200px){.menu-categories-sub__item{font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.menu-categories-sub__item{transition:color .2s ease 0s,background-color .2s ease 0s}.menu-categories-sub__item:hover{background-color:rgba(245,252,245,.781);color:#7fad39}}.menu-items__list{row-gap:15px;-moz-column-gap:40px;column-gap:40px;display:flex;align-items:center;flex-wrap:wrap}@media (max-width:1200px){.menu-items__list{-moz-column-gap:calc(15px + 25*((100vw - 320px)/880));column-gap:calc(15px + 25*((100vw - 320px)/880))}}@media (max-width:768.2px){.menu-items__list{padding-bottom:15px;margin-bottom:15px;width:100%;flex-direction:column;border-bottom:1px solid #dbdbdb}.menu-items__link{padding:0 15px;width:100%}}.menu-items__link a{font:500 16px/118.75% "Cerebri Sans Pro";text-transform:uppercase;color:#2a2a2a}@media (max-width:1200px){.menu-items__link a{font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (max-width:768.2px){.menu-items__link a{padding:8px 0;width:100%;display:block;position:relative;font-size:16px;font-weight:600}.menu-items__link a:after{content:"›";position:absolute;right:0;font-size:22px}}@media (any-hover:hover){.menu-items__link a{transition:color .2s ease 0s}.menu-items__link a:hover{color:#7fad39}}.menu-items__link._active a{font-weight:600;color:#7fad39}.menu-cart__icon{font-size:20px}.menu-cart__text{font:800 12px/125% "Cerebri Sans Pro";white-space:nowrap;color:#fff}@media (max-width:768.2px){.menu-cart__text{font-size:14px;font-weight:600;color:#2a2a2a}}.menu-cart__arrow{font-size:6px}.footer{overflow:hidden}.footer__wrapper{background:#191919}.footer__body{padding-top:60px;padding-bottom:40px}@media (max-width:1200px){.footer__body{padding-top:calc(40px + 20*((100vw - 320px)/880));padding-bottom:calc(20px + 20*((100vw - 320px)/880))}}.footer__content{row-gap:30px;-moz-column-gap:20px;column-gap:20px;display:flex;justify-content:space-between;flex-wrap:wrap}@media (max-width:1200px){.footer__content{row-gap:calc(25px + 5*((100vw - 320px)/880));-moz-column-gap:calc(15px + 5*((100vw - 320px)/880));column-gap:calc(15px + 5*((100vw - 320px)/880))}}.footer__action,.footer__column,.footer__contact{display:flex;flex-direction:column}.footer__action{row-gap:40px}@media (max-width:1200px){.footer__action{row-gap:calc(30px + 10*((100vw - 320px)/880))}}.footer__download{display:flex;flex-direction:column}.footer__copy{font:600 14px/185.7142857143% "Inter";margin-top:100px;color:#fff}@media (max-width:1200px){.footer__copy{margin-top:calc(40px + 60*((100vw - 320px)/880))}}.footer-contact__logo{margin-bottom:40px;display:inline-flex}@media (max-width:1200px){.footer-contact__logo{margin-bottom:calc(25px + 15*((100vw - 320px)/880))}}.footer-contact__item{font:400 14px/214.2857142857% "Inter";display:inline-flex;color:#fff}@media (any-hover:hover){.footer-contact__item{transition:color .2s ease 0s}.footer-contact__item:hover{color:#c9c9c9}}.footer-column__body{-moz-column-gap:50px;column-gap:50px;display:flex;flex-wrap:wrap}.footer-column__title{font:900 16px/187.5% "Inter";color:#fff}.footer-column__sub-list{flex:1 1 auto}.footer-column__sub-item a{font:400 14px/214.2857142857% "Inter";color:#fff}@media (any-hover:hover){.footer-column__sub-item a{transition:color .2s ease 0s}.footer-column__sub-item a:hover{color:#c9c9c9}}.footer-download__title{font:800 20px/150% "Cerebri Sans Pro";margin-bottom:20px;color:#fff}@media (max-width:1200px){.footer-download__title{margin-bottom:calc(10px + 10*((100vw - 320px)/880));font-size:calc(18px + 2*((100vw - 320px)/880))}}.footer-download__items{row-gap:10px;-moz-column-gap:10px;column-gap:10px;display:flex;align-items:center;flex-wrap:wrap}.footer-download__card{display:flex;flex-shrink:1;flex-grow:0;flex-basis:200px}@media (max-width:1200px){.footer-download__card{flex-basis:calc(150px + 50*((100vw - 320px)/880))}}.footer-download__card img,.footer-payment__item img{max-width:100%}.footer-subscribe__title{font:800 20px/150% "Cerebri Sans Pro";margin-bottom:20px;color:#fff}@media (max-width:1200px){.footer-subscribe__title{margin-bottom:calc(10px + 10*((100vw - 320px)/880));font-size:calc(18px + 2*((100vw - 320px)/880))}}.footer-subscribe__form{max-width:630px;width:100%;display:flex;align-items:center}.footer-subscribe__input{font:400 14px/121.4285714286% "Cerebri Sans Pro";background:#fff;padding:0 15px;width:100%;height:60px;color:#2a2a2a}@media (max-width:1200px){.footer-subscribe__input{height:calc(45px + 15*((100vw - 320px)/880))}}.footer-subscribe__input::-moz-placeholder{font:400 14px/121.4285714286% "Cerebri Sans Pro";text-transform:capitalize;color:#757575}.footer-subscribe__input:-ms-input-placeholder{font:400 14px/121.4285714286% "Cerebri Sans Pro";text-transform:capitalize;color:#757575}.footer-subscribe__input::placeholder{font:400 14px/121.4285714286% "Cerebri Sans Pro";text-transform:capitalize;color:#757575}.footer-subscribe__send{font:800 14px/121.4285714286% "Cerebri Sans Pro";background:#7fad39;padding-right:30px;padding-left:30px;height:60px;color:#fff}@media (max-width:1200px){.footer-subscribe__send{padding-right:calc(15px + 15*((100vw - 320px)/880));padding-left:calc(15px + 15*((100vw - 320px)/880));height:calc(45px + 15*((100vw - 320px)/880));font-size:calc(13px + 1*((100vw - 320px)/880))}}@media (any-hover:hover){.footer-subscribe__send{transition:background-color .2s ease 0s}.footer-subscribe__send:hover{background-color:#98c751}}.footer-payment__title{font:800 20px/150% "Cerebri Sans Pro";margin-bottom:20px;color:#fff}@media (max-width:1200px){.footer-payment__title{margin-bottom:calc(10px + 10*((100vw - 320px)/880));font-size:calc(18px + 2*((100vw - 320px)/880))}}.footer-payment__list{-moz-column-gap:10px;column-gap:10px;display:flex;align-items:center}.page__cetegiries,.page__products,.page__sale,.page__value{overflow:hidden}.page__products.last .products__container{padding-bottom:160px}@media (max-width:1200px){.page__products.last .products__container{padding-bottom:calc(60px + 100*((100vw - 320px)/880))}}.sale__container{padding:0;max-width:1920px}.sale__body{padding-top:40px;padding-bottom:60px}@media (max-width:1200px){.sale__body{padding-top:calc(15px + 25*((100vw - 320px)/880));padding-bottom:calc(40px + 20*((100vw - 320px)/880))}}.sale__slider.swiper{padding:0 15px;position:relative;overflow:hidden}.sale-slider__wrapper.swiper-wrapper{display:inline-flex;align-items:center}.sale-slider__slide.swiper-slide{padding-right:20px;padding-bottom:20px;display:inline-flex;flex-direction:column;justify-content:space-between;align-items:space-between;position:relative;overflow:hidden;border:6px solid #fff;box-shadow:0 3px 6px rgba(0,0,0,.1)}@media (max-width:1200px){.sale-slider__slide.swiper-slide{padding-right:calc(10px + 10*((100vw - 320px)/880));padding-bottom:calc(10px + 10*((100vw - 320px)/880))}}@media (any-hover:hover){.sale-slider__slide.swiper-slide .sale-slider__image img{transition:transform .3s ease 0s}.sale-slider__slide.swiper-slide:hover .sale-slider__image img{transform:scale(1.1)}}.sale-slider__image{padding-bottom:4%}.sale-slider__image img{width:100%;height:100%;position:absolute;top:0;left:0;-o-object-fit:cover;object-fit:cover}.sale-slider__item{background:#fff;padding:18px;margin-bottom:40px;max-width:225px;position:relative;z-index:2}@media (max-width:1200px){.sale-slider__item{padding:calc(12px + 6*((100vw - 320px)/880));margin-bottom:calc(20px + 20*((100vw - 320px)/880));max-width:calc(160px + 65*((100vw - 320px)/880))}}.sale-slider__precent{font:800 14px/171.4285714286% "Cerebri Sans Pro";color:#7fad39}@media (max-width:1200px){.sale-slider__precent{font-size:calc(12px + 2*((100vw - 320px)/880))}}@media (max-width:768.2px){.sale-slider__precent{font-weight:700}}.sale-slider__buy-more{font:800 16px/150% "Cerebri Sans Pro";color:#2a2a2a}@media (max-width:1200px){.sale-slider__buy-more{font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (max-width:768.2px){.sale-slider__buy-more{font-weight:600}}.sale-slider__name{font:500 16px/150% "Cerebri Sans Pro";color:#a9a9a9}@media (max-width:1200px){.sale-slider__name{font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (max-width:768.2px){.sale-slider__name{font-weight:400}}.sale-slider__btn-container{display:flex;justify-content:flex-end;align-items:center;position:relative;z-index:2}.sale-slider__btn{font:800 14px/121.4285714286% "Cerebri Sans Pro";background:#7fad39;padding-right:20px;padding-left:20px;min-height:50px;display:inline-flex;justify-content:center;align-items:center;color:#fff}@media (max-width:1200px){.sale-slider__btn{padding-right:calc(15px + 5*((100vw - 320px)/880));padding-left:calc(15px + 5*((100vw - 320px)/880));min-height:calc(40px + 10*((100vw - 320px)/880));font-size:calc(13px + 1*((100vw - 320px)/880))}}@media (any-hover:hover){.sale-slider__btn{transition:background-color .2s ease 0s}.sale-slider__btn:hover{background-color:#98c751}}@media (max-width:768.2px){.sale-slider__btn{font-weight:600}}.sale-slider__arrow.swiper-button-next,.sale-slider__arrow.swiper-button-prev{background:#fff;width:30px;height:30px;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;transform:translateY(-50%);z-index:2;border-radius:50%;border:2px solid #e6e6e6;font-size:10px;color:#2a2a2a}.sale-slider__arrow.swiper-button-next.swiper-button-prev,.sale-slider__arrow.swiper-button-prev.swiper-button-prev{left:2px}.sale-slider__arrow.swiper-button-next.swiper-button-prev ._icon-arrow,.sale-slider__arrow.swiper-button-prev.swiper-button-prev ._icon-arrow{transform:rotate(180deg)}.sale-slider__arrow.swiper-button-next.swiper-button-next,.sale-slider__arrow.swiper-button-prev.swiper-button-next{right:2px}.cetegiries-slider__arrow.swiper-button-next:after,.cetegiries-slider__arrow.swiper-button-prev:after,.products-slider__arrow.swiper-button-next:after,.products-slider__arrow.swiper-button-prev:after,.sale-slider__arrow.swiper-button-next:after,.sale-slider__arrow.swiper-button-prev:after{display:none}@media (any-hover:hover){.sale-slider__arrow.swiper-button-next,.sale-slider__arrow.swiper-button-prev{transition:background-color .2s ease 0s}.sale-slider__arrow.swiper-button-next:hover,.sale-slider__arrow.swiper-button-prev:hover{background-color:#eee}}.cetegiries__container{padding:0}.cetegiries__body{padding-bottom:60px}@media (max-width:1200px){.cetegiries__body{padding-bottom:calc(40px + 20*((100vw - 320px)/880))}}.cetegiries__item{padding:0 15px;margin-bottom:40px}@media (max-width:1200px){.cetegiries__item{margin-bottom:calc(15px + 25*((100vw - 320px)/880))}}.cetegiries__slider.swiper{padding:0 15px;position:relative;overflow:hidden}.cetegiries-slider__wrapper.swiper-wrapper{display:inline-flex;align-items:center}.cetegiries-slider__slide.swiper-slide{background:#fff;padding:18px 15px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;border:.5px solid rgba(42,42,42,.15);box-shadow:0 1px 5px rgba(0,0,0,.06)}@media (max-width:1200px){.cetegiries-slider__slide.swiper-slide{padding:calc(8px + 10*((100vw - 320px)/880)) calc(5px + 10*((100vw - 320px)/880)) calc(10px + 10*((100vw - 320px)/880))}}@media (any-hover:hover){.cetegiries-slider__slide.swiper-slide{transition:background-color .2s ease 0s}.cetegiries-slider__slide.swiper-slide:hover{background-color:#e9ffe8}.cetegiries-slider__slide.swiper-slide:hover .cetegiries-slider__title{color:#7fad39}}.cetegiries-slider__icon{margin-bottom:14px;max-width:60px}@media (max-width:1200px){.cetegiries-slider__icon{margin-bottom:calc(8px + 6*((100vw - 320px)/880));max-width:calc(40px + 20*((100vw - 320px)/880))}}.cetegiries-slider__icon img{max-width:100%}.cetegiries-slider__title{font:600 14px/171.4285714286% "Cerebri Sans Pro";transition:color .2s ease 0s;color:#2a2a2a}@media (max-width:1200px){.cetegiries-slider__title{font-size:calc(10px + 4*((100vw - 320px)/880))}}.cetegiries-slider__arrow.swiper-button-next,.cetegiries-slider__arrow.swiper-button-prev{background:#fff;width:30px;height:30px;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;z-index:2;transform:translateY(-50%);border-radius:50%;border:2px solid #e6e6e6;font-size:10px;color:#2a2a2a}.cetegiries-slider__arrow.swiper-button-next.swiper-button-prev,.cetegiries-slider__arrow.swiper-button-prev.swiper-button-prev{left:0}.cetegiries-slider__arrow.swiper-button-next.swiper-button-prev ._icon-arrow,.cetegiries-slider__arrow.swiper-button-prev.swiper-button-prev ._icon-arrow,.products-slider__arrow.swiper-button-next.swiper-button-prev ._icon-arrow,.products-slider__arrow.swiper-button-prev.swiper-button-prev ._icon-arrow{transform:rotate(180deg)}.cetegiries-slider__arrow.swiper-button-next.swiper-button-next,.cetegiries-slider__arrow.swiper-button-prev.swiper-button-next{right:0}@media (any-hover:hover){.cetegiries-slider__arrow.swiper-button-next,.cetegiries-slider__arrow.swiper-button-prev{transition:background-color .2s ease 0s}.cetegiries-slider__arrow.swiper-button-next:hover,.cetegiries-slider__arrow.swiper-button-prev:hover{background-color:#eee}}.products__container{padding:0}.products__body{padding-bottom:45px}@media (max-width:1200px){.products__body{padding-bottom:calc(25px + 20*((100vw - 320px)/880))}}.products__item{padding:0 15px;margin-bottom:25px}@media (max-width:1200px){.products__item{margin-bottom:calc(0px + 25*((100vw - 320px)/880))}}.products__slider.swiper{padding:15px;position:relative;overflow:hidden}.products-slider__wrapper.swiper-wrapper{display:inline-flex}.products-slider__item.swiper-slide{background:#fff;padding:20px;display:flex;flex-direction:column}@media (max-width:1200px){.products-slider__item.swiper-slide{padding:calc(10px + 10*((100vw - 320px)/880))}}@media (any-hover:hover){.products-slider__item.swiper-slide{transition:box-shadow .2s ease 0s}.products-slider__item.swiper-slide:hover{box-shadow:0 0 12px 4px rgba(88,88,88,.2)}}.products-slider__arrow.swiper-button-next,.products-slider__arrow.swiper-button-prev{background:#fff;width:30px;height:30px;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;z-index:2;transform:translateY(-50%);border-radius:50%;border:2px solid #e6e6e6;font-size:10px;color:#2a2a2a}.products-slider__arrow.swiper-button-next.swiper-button-prev,.products-slider__arrow.swiper-button-prev.swiper-button-prev{left:0}.products-slider__arrow.swiper-button-next.swiper-button-next,.products-slider__arrow.swiper-button-prev.swiper-button-next{right:0}.products-slider__arrow.swiper-button-next.swiper-button-disabled,.products-slider__arrow.swiper-button-prev.swiper-button-disabled{pointer-events:auto;opacity:.8;cursor:not-allowed}@media (any-hover:hover){.products-slider__arrow.swiper-button-next,.products-slider__arrow.swiper-button-prev{transition:background-color .2s ease 0s}.products-slider__arrow.swiper-button-next:hover,.products-slider__arrow.swiper-button-prev:hover{background-color:#eee}}.products-slider-item__top{margin-bottom:8px;display:flex;justify-content:space-between;align-items:flex-start}@media (max-width:1200px){.products-slider-item__top{margin-bottom:calc(5px + 3*((100vw - 320px)/880))}}.products-slider-item__label{font:800 12px/183.3333333333% "Cerebri Sans Pro";background:#7fad39;margin-right:15px;padding:6px 7px;color:#fff}@media (max-width:768.2px){.products-slider-item__label{font-weight:600}}.products-slider-item__favorites{background:#d8e6c3;min-width:32px;height:32px;display:flex;justify-content:center;align-items:center;border-radius:50px;cursor:pointer;transition:background-color .3s ease 0s,color .3s ease 0s}@media (any-hover:hover){.products-slider-item__favorites:hover{background-color:#caddae}}.products-slider-item__favorites._icon-favorites{font-size:16px;color:#7fad39}.products-slider-item__favorites._active{background:#e2544c;color:#fff}.products-slider-item__image{overflow:hidden}@media (any-hover:hover){.products-slider-item__image img{transition:transform .2s ease 0s}.products-slider-item__image:hover img{transform:scale(1.1)}}.products-slider-item__image img{max-width:100%}.products-slider-item__text-block{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;flex:1 1 auto;text-align:center}.products-slider-item__quality{font:600 12px/137.5% Cerebri Sans Pro;flex:1 1 auto;color:#a9a9a9}@media (max-width:1200px){.products-slider-item__quality{font-size:calc(10px + 2*((100vw - 320px)/880))}}.products-slider-item__name{font:800 16px/137.5% "Cerebri Sans Pro";margin-bottom:15px;flex:1 1 auto;color:#2a2a2a}@media (max-width:1200px){.products-slider-item__name{margin-bottom:calc(10px + 5*((100vw - 320px)/880));font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.products-slider-item__name{transition:color .2s ease 0s}.products-slider-item__name:hover{color:#7fad39}}@media (max-width:768.2px){.products-slider-item__name{font-weight:700}}.products-slider-item__price{font:600 16px/137.5% "Cerebri Sans Pro";margin-bottom:25px;display:flex;color:#7fad39}@media (max-width:1200px){.products-slider-item__price{margin-bottom:calc(15px + 10*((100vw - 320px)/880));font-size:calc(14px + 2*((100vw - 320px)/880))}}.products-slider-item__price .delete{margin-left:5px;text-decoration:line-through;color:#a9a9a9}.products-slider-item__action{justify-content:space-between}.products-slider-item__action,.products-slider-item__basket,.products-slider-item__quantity{display:flex;align-items:center}.products-slider-item__basket{background:0 0;width:40px;height:40px;justify-content:center;border-radius:50%;cursor:pointer;font-size:20px;color:#a9a9a9}@media (any-hover:hover){.products-slider-item__basket{transition:background-color .2s ease 0s}.products-slider-item__basket:hover{background-color:#eee}}@media (max-width:1200px){.products-slider-item__basket{font-size:calc(15px + 5*((100vw - 320px)/880))}}.products-slider-quantity__minus{background:#2a2a2a;width:25px;height:25px;display:flex;justify-content:center;align-items:center;cursor:pointer;font-size:26px;color:#fff}@media (any-hover:hover){.products-slider-quantity__minus{transition:background-color .2s ease 0s}.products-slider-quantity__minus:hover{background-color:#353535}}.products-slider-quantity__input{width:25px;display:flex;pointer-events:none;text-align:center}.products-slider-quantity__plus{background:#2a2a2a;width:25px;height:25px;display:flex;justify-content:center;align-items:center;cursor:pointer;font-size:26px;color:#fff}@media (any-hover:hover){.products-slider-quantity__plus{transition:background-color .2s ease 0s}.products-slider-quantity__plus:hover{background-color:#353535}}.value__body{padding-bottom:60px}@media (max-width:1200px){.value__body{padding-bottom:calc(40px + 20*((100vw - 320px)/880))}}.value__item{margin-bottom:40px}@media (max-width:1200px){.value__item{margin-bottom:calc(15px + 25*((100vw - 320px)/880))}}.value__column{row-gap:20px;-moz-column-gap:20px;column-gap:20px}@media (min-width:768.2px){.value__column{display:grid;grid-template-columns:repeat(3,1fr)}}@media (max-width:768.2px){.value__column{display:flex;flex-direction:column;align-items:center}}.value-column__item{width:100%;display:flex;flex-direction:column;position:relative;overflow:hidden}@media (max-width:768.2px){.value-column__item{max-width:552.2px}}@media (any-hover:hover){.value-column__item_little .value-column-little__image img{transition:transform .3s ease 0s}.value-column__item_little:hover .value-column-little__image img{transform:scale(1.1)}}@media (min-width:768.2px){.value-column__item_big{grid-column-start:1;grid-column-end:4}}@media (max-width:768.2px){.value-column__item_big{grid-column-start:1;grid-column-end:1}}@media (any-hover:hover){.value-column__item_big .value-column-big__image img{transition:transform .3s ease 0s}.value-column__item_big:hover .value-column-big__image img{transform:scale(1.1)}}.value-column-little__image{padding-bottom:76.5%}@media (max-width:768.2px){.value-column-little__image{padding-bottom:66.5%}}.value-column-little__body{padding:20px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;position:absolute;top:0;z-index:2}@media (max-width:1200px){.value-column-little__body{padding:calc(10px + 10*((100vw - 320px)/880))}}@media (max-width:768.2px){.value-column-little__body{padding:25px}}@media (max-width:768.2px) and (max-width:1200px){.value-column-little__body{padding:calc(15px + 10*((100vw - 320px)/880))}}.value-column-little__title{font:900 28px/121.4285714286% "Cerebri Sans Pro";color:#2a2a2a}@media (max-width:1200px){.value-column-little__title{font-size:calc(18px + 10*((100vw - 320px)/880))}}@media (min-width:768.2px){.value-column-little__title{max-width:150px}}@media (min-width:768.2px) and (max-width:1200px){.value-column-little__title{max-width:calc(250px + -100*((100vw - 320px)/880))}}@media (max-width:768.2px){.value-column-little__title{max-width:150px;font-size:28px;font-weight:700}}@media (max-width:768.2px) and (max-width:1200px){.value-column-little__title{font-size:calc(22px + 6*((100vw - 320px)/880))}}.value-column-little__text{font:300 28px/121.4285714286% "Cerebri Sans Pro";margin-bottom:30px}@media (max-width:1200px){.value-column-little__text{margin-bottom:calc(15px + 15*((100vw - 320px)/880));font-size:calc(14px + 14*((100vw - 320px)/880))}}@media (min-width:768.2px){.value-column-little__text{max-width:150px}}@media (min-width:768.2px) and (max-width:1200px){.value-column-little__text{max-width:calc(250px + -100*((100vw - 320px)/880))}}@media (max-width:768.2px){.value-column-little__text{max-width:150px;font-size:28px}}@media (max-width:768.2px) and (max-width:1200px){.value-column-little__text{font-size:calc(18px + 10*((100vw - 320px)/880))}}.value-column-little__btn{font:700 16px/118.75% "Cerebri Sans Pro";background:#2a2a2a;padding:18px 20px;display:inline-flex;justify-content:center;align-items:center;color:#fff}@media (max-width:1200px){.value-column-little__btn{padding:calc(10px + 8*((100vw - 320px)/880)) calc(10px + 10*((100vw - 320px)/880));font-size:calc(14px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.value-column-little__btn{transition:background-color .2s ease 0s}.value-column-little__btn:hover{background-color:#3b3b3b}}@media (max-width:768.2px){.value-column-little__btn{font-weight:600}}.value-column-big__image{padding-bottom:12%}.value-column-big__image:after{background:rgba(42,42,42,.32);content:"";width:100%;height:100%;position:absolute;top:0;left:0;z-index:1}@media (max-width:768.2px){.value-column-big__image{padding-bottom:22%}}@media (max-width:500.2px){.value-column-big__image{padding-bottom:32%}}@media (max-width:375.2px){.value-column-big__image{padding-bottom:42%}}.value-column-big__body{padding:20px;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;left:0;z-index:2}@media (max-width:1200px){.value-column-big__body{padding:calc(10px + 10*((100vw - 320px)/880))}}@media (max-width:1024.2px){.value-column-big__body{flex-direction:row}}@media (max-width:768.2px){.value-column-big__body{flex-direction:column}}.value-column-big__title{font:900 24px/141.6666666667% "Cerebri Sans Pro";text-align:center;color:#fff}@media (max-width:1200px){.value-column-big__title{font-size:calc(16px + 8*((100vw - 320px)/880))}}@media (min-width:1024.2px){.value-column-big__title{margin-bottom:23px}}@media (min-width:1024.2px) and (max-width:1200px){.value-column-big__title{margin-bottom:calc(5px + 18*((100vw - 320px)/880))}}@media (max-width:1024.2px){.value-column-big__title{margin-right:15px}}@media (max-width:768.2px){.value-column-big__title{margin-bottom:23px;font-weight:600}}@media (max-width:768.2px) and (max-width:1200px){.value-column-big__title{margin-bottom:calc(10px + 13*((100vw - 320px)/880))}}.value-column-big__btn{font:900 14px/242.8571428571% "Cerebri Sans Pro";background:rgba(127,173,57,.7);padding:0 14px;border:2px dashed #fff;white-space:nowrap;color:#fff}@media (max-width:1200px){.value-column-big__btn{font-size:calc(12px + 2*((100vw - 320px)/880))}}@media (any-hover:hover){.value-column-big__btn{transition:background-color .2s ease 0s}.value-column-big__btn:hover{background-color:rgba(127,173,57,.8)}}@media (max-width:768.2px){.value-column-big__btn{font-weight:600}}.page{flex:1 1 auto}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-Bold.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Bold.woff") format("woff"), url("../fonts/CerebriSansPro-Bold.ttf") format("truetype"), url("../fonts/CerebriSansPro-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-ExtraBold.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-ExtraBold.woff") format("woff"), url("../fonts/CerebriSansPro-ExtraBold.ttf") format("truetype"), url("../fonts/CerebriSansPro-ExtraBold.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-Light.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Light.woff") format("woff"), url("../fonts/CerebriSansPro-Light.ttf") format("truetype"), url("../fonts/CerebriSansPro-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-Medium.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Medium.woff") format("woff"), url("../fonts/CerebriSansPro-Medium.ttf") format("truetype"), url("../fonts/CerebriSansPro-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-Regular.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-Regular.woff") format("woff"), url("../fonts/CerebriSansPro-Regular.ttf") format("truetype"), url("../fonts/CerebriSansPro-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-SemiBold.eot");
+  src: local("☺"), url("../fonts/CerebriSansPro-SemiBold.woff") format("woff"), url("../fonts/CerebriSansPro-SemiBold.ttf") format("truetype"), url("../fonts/CerebriSansPro-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "iconfonts";
+  src: url("../iconfonts/iconfonts.eot?lhqpxj");
+  src: url("../iconfonts/iconfonts.eot?lhqpxj#iefix") format("embedded-opentype"), url("../iconfonts/iconfonts.ttf?lhqpxj") format("truetype"), url("../iconfonts/iconfonts.woff?lhqpxj") format("woff"), url("../iconfonts/iconfonts.svg?lhqpxj#iconfonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=_icon-]:before,
+[class*=" _icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "iconfonts" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-arrow:before {
+  content: "\e900";
+}
+
+._icon-email:before {
+  content: "\e901";
+}
+
+._icon-facebook:before {
+  content: "\e902";
+}
+
+._icon-favorites:before {
+  content: "\e903";
+}
+
+._icon-full-arrow:before {
+  content: "\e904";
+}
+
+._icon-linkedin:before {
+  content: "\e905";
+}
+
+._icon-location:before {
+  content: "\e906";
+}
+
+._icon-phone:before {
+  content: "\e907";
+}
+
+._icon-search:before {
+  content: "\e908";
+}
+
+._icon-shop:before {
+  content: "\e909";
+}
+
+._icon-twitter:before {
+  content: "\e90a";
+}
+
+._icon-user:before {
+  content: "\e90b";
+}
+
+._icon-whatsapp:before {
+  content: "\e90c";
+}
+
+.banner-text {
+  font-family: "Cerebri Sans Pro";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 116.6666666667%;
+  color: #fff;
+}
+@media (max-width: 768.2px) {
+  .banner-text {
+    /* Если меньше контейнера */
+    font-size: 16px;
+    color: #2A2A2A;
+    ine-height: 114.2857142857%;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .banner-text {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+._text-item {
+  display: flex;
+  flex-direction: column;
+}
+
+._first-title {
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 500;
+  /* Если меньше контейнера */
+  line-height: 30px;
+  color: #7FAD39;
+}
+@media (max-width: 1200px) {
+  ._first-title {
+    font-size: calc(15px + 1 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  ._first-title {
+    line-height: calc(22px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+._second-title {
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 24px;
+  font-weight: 800;
+  /* Если меньше контейнера */
+  line-height: 30px;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  ._second-title {
+    font-size: calc(20px + 4 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  ._second-title {
+    line-height: calc(22px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  ._second-title {
+    font-weight: 700;
+  }
+}
+
+._btn-click:active {
+  transform: translateY(2px);
+}
+
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body.ie ._ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.ie ._ibg img {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+  background-color: #E5E5E5;
+}
+body._lock-scroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+._container {
+  padding: 0px 15px 0px 15px;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+.banner__wrapper {
+  background-color: #2A2A2A;
+}
+@media (max-width: 768.2px) {
+  .banner__wrapper {
+    display: none;
+  }
+}
+.banner__body {
+  min-height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__email {
+  /* Если меньше контейнера */
+  margin-right: 15px;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .banner__email {
+    margin-right: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .banner__email {
+    transition: background-color 0.2s ease 0s;
+  }
+  .banner__email:hover {
+    background-color: rgb(59, 59, 59);
+  }
+}
+@media (max-width: 768.2px) {
+  .banner__email {
+    margin-right: 0px;
+    padding: 8px 15px;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: none;
+  }
+}
+.banner__item {
+  /* Если меньше контейнера */
+  padding-left: 20px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .banner__item {
+    padding-left: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+.banner__item:before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: #fff;
+}
+.banner__icons {
+  row-gap: 5px;
+  /* Если меньше контейнера */
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .banner__icons {
+    -moz-column-gap: calc(10px + 10 * ((100vw - 320px) / 880));
+         column-gap: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 768.2px) {
+  .banner__icons {
+    /* Если меньше контейнера */
+    margin-left: 25px;
+  }
+}
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .banner__icons {
+    margin-left: calc(15px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .banner__icons {
+    padding: 0px 15px;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.banner-email__icon {
+  margin-right: 8px;
+  /* Если меньше контейнера */
+  font-size: 16px;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .banner-email__icon {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .banner-email__icon {
+    transition: color 0.2s ease 0s;
+  }
+}
+@media (max-width: 768.2px) {
+  .banner-email__icon {
+    color: #2A2A2A;
+  }
+}
+@media (any-hover: hover) {
+  .banner-email__text {
+    transition: color 0.2s ease 0s;
+  }
+}
+
+.banner-icons__item {
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  /* Если меньше контейнера */
+  font-size: 18px;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .banner-icons__item {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .banner-icons__item {
+    transition: background-color 0.2s ease 0s;
+  }
+  .banner-icons__item:hover {
+    background-color: rgb(59, 59, 59);
+  }
+}
+@media (max-width: 768.2px) {
+  .banner-icons__item {
+    padding: 8px 0px;
+    width: 100%;
+    justify-content: flex-start;
+    color: #2A2A2A;
+  }
+}
+@media (min-width: 768.2px) {
+  .banner-icons__text {
+    display: none;
+  }
+}
+@media (max-width: 768.2px) {
+  .banner-icons__text {
+    margin-left: 8px;
+  }
+}
+
+.header {
+  position: relative;
+}
+@media (min-width: 768.2px) {
+  .header {
+    /* Если меньше контейнера */
+    min-height: 80px;
+    z-index: 1000;
+  }
+}
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .header {
+    min-height: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 768.2px) {
+  .header._scroll .header__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-name: scrollAnimation;
+            animation-name: scrollAnimation;
+  }
+  @-webkit-keyframes scrollAnimation {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
+@media (max-width: 768.2px) {
+  .header {
+    z-index: 400;
+  }
+}
+.header__wrapper {
+  width: 100%;
+  box-shadow: 0px 1px 0px #CECECE;
+  background-color: #fff;
+}
+@media (max-width: 768.2px) {
+  .header__wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+.header__body {
+  /* Если меньше контейнера */
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .header__body {
+    min-height: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.header__logo {
+  /* Если меньше контейнера */
+  margin-right: 45px;
+  display: inline-flex;
+  flex-shrink: 0;
+  flex-basis: 0;
+  /* Если меньше контейнера */
+  flex-basis: 118px;
+  order: 1;
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-right: calc(10px + 35 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    flex-basis: calc(90px + 28 * ((100vw - 320px) / 880));
+  }
+}
+.header__logo img {
+  max-width: 100%;
+}
+.header__location {
+  order: 2;
+}
+@media (min-width: 768.2px) {
+  .header__location {
+    /* Если меньше контейнера */
+    margin-right: 35px;
+  }
+}
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .header__location {
+    margin-right: calc(10px + 25 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .header__location {
+    display: none;
+  }
+}
+.header__search {
+  width: 100%;
+}
+@media (min-width: 552.2px) {
+  .header__search {
+    /* Если меньше контейнера */
+    margin-right: 15px;
+    order: 3;
+  }
+}
+@media (min-width: 552.2px) and (max-width: 1200px) {
+  .header__search {
+    margin-right: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+.header__action {
+  /* Если меньше контейнера */
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .header__action {
+    -moz-column-gap: calc(5px + 15 * ((100vw - 320px) / 880));
+         column-gap: calc(5px + 15 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 552.2px) {
+  .header__action {
+    order: 4;
+  }
+}
+@media (max-width: 552.2px) {
+  .header__action {
+    order: 3;
+  }
+}
+
+.header-location__select {
+  position: relative;
+}
+@media (any-hover: hover) {
+  .header-location__select:hover .header-location__list {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media (any-hover: hover) and (min-width: 768.2px) {
+  .header-location__select:hover .header-location__btn {
+    color: #7FAD39;
+  }
+}
+@media (any-hover: hover) {
+  .header-location__select:hover .header-location__btn .header-location__arrow {
+    transform: rotate(270deg);
+  }
+}
+.header-location__select._active .header-location__list {
+  display: block;
+}
+.header-location__btn {
+  padding: 13px 0px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #A9A9A9;
+}
+@media (any-hover: hover) {
+  .header-location__btn {
+    transition: color 0.2s ease 0s;
+  }
+  .header-location__btn:hover {
+    color: #7FAD39;
+  }
+}
+@media (max-width: 768.2px) {
+  .header-location__btn {
+    padding: 8px 0px;
+    width: 100%;
+    color: #2A2A2A;
+  }
+}
+@media (min-width: 768.2px) {
+  .header-location__btn._active {
+    color: #7FAD39;
+  }
+}
+.header-location__btn._active .header-location__arrow {
+  transform: rotate(270deg);
+}
+.header-location__icon {
+  font-size: 14px;
+}
+@media (max-width: 768.2px) {
+  .header-location__icon {
+    font-size: 18px;
+  }
+}
+.header-location__selected {
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 121.4285714286%;
+}
+@media (max-width: 1200px) {
+  .header-location__selected {
+    font-size: calc(12px + 3 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .header-location__selected {
+    /* Если меньше контейнера */
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .header-location__selected {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.header-location__arrow {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease 0s;
+  font-size: 8px;
+}
+@media (max-width: 768.2px) {
+  .header-location__arrow {
+    font-size: 10px;
+  }
+}
+.header-location__list {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 4px;
+  transform: translateY(10%);
+  box-shadow: 0px 0px 5px 1px rgb(216, 216, 216);
+  transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+  background-color: #fff;
+}
+@media (max-width: 768.2px) {
+  .header-location__list {
+    margin-top: 0px;
+    display: none;
+    position: relative;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0%);
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+.header-location__item {
+  padding: 10px 10px;
+  cursor: pointer;
+}
+@media (min-width: 768.2px) {
+  .header-location__item:not(:last-child) {
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+}
+@media (any-hover: hover) {
+  .header-location__item {
+    transition: background-color 0.2s ease 0s;
+  }
+  .header-location__item:hover {
+    background-color: rgba(245, 252, 245, 0.781);
+  }
+  .header-location__item:hover .header-location__title {
+    color: #7FAD39;
+  }
+}
+@media (max-width: 768.2px) {
+  .header-location__item {
+    padding: 6px 0px;
+    /* Если меньше контейнера */
+    font-size: 16px;
+    line-height: 112.5%;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .header-location__item {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.header-location__title {
+  margin-bottom: 8px;
+  transition: color 0.2s ease 0s;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 111.7647058824%;
+  color: rgb(56, 56, 56);
+}
+@media (max-width: 1200px) {
+  .header-location__title {
+    font-size: calc(14px + 3 * ((100vw - 320px) / 880));
+  }
+}
+.header-location__text {
+  display: flex;
+}
+.header-location__text p {
+  padding-left: 6px;
+  width: 100%;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 121.4285714286%;
+  color: rgb(56, 56, 56);
+}
+@media (max-width: 1200px) {
+  .header-location__text p {
+    font-size: calc(12px + 3 * ((100vw - 320px) / 880));
+  }
+}
+.header-location__text ._icon-location {
+  position: relative;
+  top: 2px;
+  font-size: 14px;
+  color: rgb(56, 56, 56);
+}
+
+.header-search__item {
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #F7F7F7;
+}
+@media (max-width: 552.2px) {
+  .header-search__item {
+    max-width: none;
+    /* Если меньше контейнера */
+    min-height: 60px;
+    position: absolute;
+    /* Если меньше контейнера */
+    bottom: -76px;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10%);
+    box-shadow: 0px 0px 8px 3px rgba(53, 53, 53, 0.55);
+    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+  }
+}
+@media (max-width: 552.2px) and (max-width: 1200px) {
+  .header-search__item {
+    min-height: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 552.2px) and (max-width: 1200px) {
+  .header-search__item {
+    bottom: calc(-56px + -20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 552.2px) {
+  .header-search__item._active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%);
+  }
+}
+.header-search__form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-search__btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 17px;
+  color: #999999;
+}
+@media (max-width: 552.2px) {
+  .header-search__btn {
+    /* Если меньше контейнера */
+    width: 60px;
+    /* Если меньше контейнера */
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 552.2px) and (max-width: 1200px) {
+  .header-search__btn {
+    width: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 552.2px) and (max-width: 1200px) {
+  .header-search__btn {
+    height: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 552.2px) {
+  .header-search__open {
+    display: none;
+  }
+}
+@media (max-width: 552.2px) {
+  .header-search__open {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+    font-size: 22px;
+    color: #2A2A2A;
+  }
+}
+.header-search__input {
+  height: 36px;
+  padding: 0px 10px 0px 5px;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Cerebri Sans Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+  color: #2A2A2A;
+}
+@media (max-width: 768.2px) {
+  .header-search__input {
+    font-weight: 400;
+  }
+}
+@media (max-width: 552.2px) {
+  .header-search__input {
+    height: 100%;
+  }
+}
+.header-search__input::-moz-placeholder {
+  font-family: "Cerebri Sans Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+  color: #999999;
+}
+.header-search__input:-ms-input-placeholder {
+  font-family: "Cerebri Sans Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+  color: #999999;
+}
+.header-search__input::placeholder {
+  font-family: "Cerebri Sans Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+  color: #999999;
+}
+@media (max-width: 768.2px) {
+  .header-search__input::-moz-placeholder {
+    font-weight: 400;
+  }
+  .header-search__input:-ms-input-placeholder {
+    font-weight: 400;
+  }
+  .header-search__input::placeholder {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768.2px) {
+  .header-action__elem {
+    content: "";
+    width: 2px;
+    height: 24px;
+    pointer-events: none;
+    background-color: rgba(42, 42, 42, 0.2);
+  }
+}
+.header-action__phone {
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #2A2A2A;
+}
+@media (any-hover: hover) {
+  .header-action__phone {
+    transition: color 0.2s ease 0s;
+  }
+  .header-action__phone:hover {
+    color: #7FAD39;
+  }
+}
+@media (max-width: 992.2px) {
+  .header-action__phone {
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+  }
+}
+.header-action__favorites {
+  position: relative;
+}
+@media (any-hover: hover) {
+  .header-action__favorites:hover .header-favorites__icon {
+    color: red;
+  }
+}
+.header-action__user {
+  position: relative;
+}
+@media (min-width: 768.2px) {
+  .header-action__menu {
+    display: none;
+  }
+}
+@media (max-width: 768.2px) {
+  .header-action__menu {
+    display: block;
+  }
+}
+
+.header-phone__icon {
+  font-size: 18px;
+}
+@media (max-width: 992.2px) {
+  .header-phone__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header-phone__text {
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+}
+@media (max-width: 1200px) {
+  .header-phone__text {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 992.2px) {
+  .header-phone__text {
+    display: none;
+  }
+}
+
+.header-favorites__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #2A2A2A;
+}
+@media (any-hover: hover) {
+  .header-favorites__icon {
+    transition: color 0.2s ease 0s;
+  }
+}
+.header-favorites__item {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #7FAD39;
+  font-family: "Cerebri Sans Pro";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #fff;
+}
+
+.header-user__dropdown {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #2A2A2A;
+}
+.header-user__dropdown span {
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+}
+@media (max-width: 1200px) {
+  .header-user__dropdown span {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .header-user__dropdown {
+    transition: color 0.2s ease 0s;
+  }
+  .header-user__dropdown:hover {
+    color: #7FAD39;
+  }
+}
+@media (max-width: 768.2px) {
+  .header-user__dropdown span {
+    display: none;
+  }
+}
+.header-user__dropdown._active {
+  color: #7FAD39;
+}
+.header-user__dropdown._active .header-user__arrow {
+  transform: rotate(270deg);
+}
+.header-user__icon {
+  font-size: 20px;
+}
+@media (max-width: 768.2px) {
+  .header-user__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header-user__arrow {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease 0s;
+  font-size: 8px;
+}
+@media (max-width: 768.2px) {
+  .header-user__arrow {
+    display: none;
+  }
+}
+@media (min-width: 768.2px) {
+  .header-user__body {
+    max-width: 140px;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 4px;
+    transform: translateY(10%);
+    box-shadow: 0px 0px 5px 1px rgb(216, 216, 216);
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    background-color: #fff;
+  }
+  .header-user__body._active {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 768.2px) {
+  .header-user__body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform: scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    overflow: auto;
+    box-shadow: 0px 0px 9999px 9999px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+    background-color: #fff;
+  }
+  .header-user__body._active {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+@media (min-width: 768.2px) {
+  .header-user__top {
+    display: none;
+  }
+}
+@media (max-width: 768.2px) {
+  .header-user__top {
+    width: 100%;
+    min-height: 60px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 0px #CECECE;
+    background-color: #fff;
+  }
+}
+.header-user__label {
+  display: flex;
+  align-items: center;
+}
+.header-user__title {
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 121.4285714286%;
+  color: #2A2A2A;
+}
+.header-user__close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: transparent;
+}
+@media (any-hover: hover) {
+  .header-user__close {
+    transition: background-color 0.2s ease 0s;
+  }
+  .header-user__close:hover {
+    background-color: rgb(238, 238, 238);
+  }
+}
+.header-user__close span {
+  width: 25px;
+  height: 2px;
+  display: flex;
+  position: relative;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: transparent;
+}
+.header-user__close span:before, .header-user__close span:after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+.header-user__close span:before {
+  top: -8px;
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.header-user__close span:after {
+  top: 8px;
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+.header-user__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768.2px) {
+  .header-user__list {
+    padding: 10px 15px;
+  }
+}
+.header-user__item {
+  letter-spacing: 0.2px;
+}
+.header-user__item._exit {
+  font-weight: 900;
+}
+@media (min-width: 768.2px) {
+  .header-user__item {
+    padding: 7.5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: "Cerebri Sans Pro";
+    /* Если меньше контейнера */
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 121.4285714286%;
+    color: rgb(56, 56, 56);
+  }
+}
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .header-user__item {
+    font-size: calc(12px + 3 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 768.2px) {
+  .header-user__item:not(:last-child) {
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+}
+@media (max-width: 768.2px) {
+  .header-user__item {
+    padding: 10px 0px;
+    white-space: nowrap;
+    font-family: "Cerebri Sans Pro";
+    /* Если меньше контейнера */
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 117.6470588235%;
+    color: #2A2A2A;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .header-user__item {
+    font-size: calc(15px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .header-user__item {
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s;
+  }
+  .header-user__item:hover {
+    background-color: rgba(245, 252, 245, 0.781);
+    color: #7FAD39;
+  }
+}
+
+.header-menu__burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+@media (any-hover: hover) {
+  .header-menu__burger {
+    transition: background-color 0.2s ease 0s;
+  }
+  .header-menu__burger:hover {
+    background-color: rgb(238, 238, 238);
+  }
+}
+.header-menu__burger span {
+  width: 25px;
+  height: 2px;
+  display: flex;
+  position: relative;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+.header-menu__burger span:before, .header-menu__burger span:after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+.header-menu__burger span:before {
+  top: -8px;
+}
+.header-menu__burger span:after {
+  top: 8px;
+}
+.header-menu__wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease 0s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.header-menu__wrapper._active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.header-menu__body {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 600;
+  overflow: auto;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.7);
+  transition: left 0.5s ease 0s;
+  background-color: #fff;
+}
+@media (max-width: 425.2px) {
+  .header-menu__body {
+    max-width: none;
+    box-shadow: none;
+  }
+}
+.header-menu__body._active {
+  left: 0;
+}
+.header-menu__top {
+  min-height: 60px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0px 1px 0px #CECECE;
+  background-color: #fff;
+}
+.header-menu__logo {
+  background-color: transparent;
+}
+.header-menu__close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: transparent;
+}
+@media (any-hover: hover) {
+  .header-menu__close {
+    transition: background-color 0.2s ease 0s;
+  }
+  .header-menu__close:hover {
+    background-color: rgb(238, 238, 238);
+  }
+}
+.header-menu__close span {
+  width: 25px;
+  height: 2px;
+  display: flex;
+  position: relative;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: transparent;
+}
+.header-menu__close span:before, .header-menu__close span:after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+.header-menu__close span:before {
+  top: -8px;
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.header-menu__close span:after {
+  top: 8px;
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+.header-menu__items {
+  padding: 15px 0px;
+}
+
+.menu__wrapper {
+  box-shadow: 0px 1px 0px #CECECE;
+  background-color: #fff;
+}
+@media (max-width: 768.2px) {
+  .menu__wrapper {
+    /* Если меньше контейнера */
+    margin-top: 80px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .menu__wrapper {
+    margin-top: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.menu__body {
+  /* Если меньше контейнера */
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  /* Если меньше контейнера */
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .menu__body {
+    -moz-column-gap: calc(15px + 25 * ((100vw - 320px) / 880));
+         column-gap: calc(15px + 25 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .menu__body {
+    min-height: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .menu__body {
+    padding: 10px 0px 0px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768.2px) {
+  .menu__categories {
+    position: relative;
+  }
+  .menu__categories:hover .menu-categories__body {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  .menu__categories:hover .menu-categories__btn {
+    background-color: rgb(238, 238, 238);
+  }
+}
+@media (max-width: 768.2px) {
+  .menu__categories {
+    flex: 1 1 100%;
+  }
+}
+.menu__items {
+  flex: 1 1 100%;
+}
+@media (max-width: 768.2px) {
+  .menu__items {
+    display: none;
+  }
+}
+.menu__cart {
+  /* Если меньше контейнера */
+  padding-right: 15px;
+  /* Если меньше контейнера */
+  padding-left: 15px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  /* Если меньше контейнера */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #7FAD39;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .menu__cart {
+    padding-right: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .menu__cart {
+    padding-left: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .menu__cart {
+    height: calc(40px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .menu__cart {
+    transition: background-color 0.2s ease 0s;
+  }
+  .menu__cart:hover {
+    background-color: #98c751;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu__cart {
+    padding: 10px 15px;
+    height: none;
+    background-color: #fff;
+    color: #2A2A2A;
+  }
+}
+
+.menu-categories__btn {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 14.75%;
+  background-color: #F7F7F7;
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 125%;
+  color: #2A2A2A;
+}
+.menu-categories__btn._active {
+  background-color: rgb(238, 238, 238);
+}
+@media (any-hover: hover) {
+  .menu-categories__btn {
+    transition: background-color 0.2s ease 0s;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__btn {
+    background-color: #7FAD39;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+.menu-categories__btn span {
+  margin-right: 8px;
+  min-width: 15px;
+  height: 2px;
+  display: flex;
+  position: relative;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+@media (max-width: 768.2px) {
+  .menu-categories__btn span {
+    margin-right: 16px;
+    min-width: 17px;
+    background-color: #fff;
+  }
+}
+.menu-categories__btn span:before, .menu-categories__btn span:after {
+  content: "";
+  min-width: 15px;
+  height: 2px;
+  position: absolute;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+@media (max-width: 768.2px) {
+  .menu-categories__btn span:before, .menu-categories__btn span:after {
+    background-color: #fff;
+  }
+}
+.menu-categories__btn span:before {
+  top: -4px;
+}
+@media (max-width: 768.2px) {
+  .menu-categories__btn span:before {
+    min-width: 22px;
+    top: -6px;
+  }
+}
+.menu-categories__btn span:after {
+  top: 4px;
+}
+@media (max-width: 768.2px) {
+  .menu-categories__btn span:after {
+    min-width: 12px;
+    top: 6px;
+  }
+}
+.menu-categories__body {
+  z-index: 999;
+  pointer-events: none;
+}
+@media (min-width: 768.2px) {
+  .menu-categories__body {
+    min-width: 240px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    border: 1px solid rgb(238, 238, 238);
+    transition: opacity 0.2s ease 0s;
+    background-color: #fff;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow-y: auto;
+    opacity: 0;
+    box-shadow: 0px 0px 9999px 9999px rgba(0, 0, 0, 0.6);
+    transform: scale(0.7);
+    transition: opacity 0.3s ease 0s, transform 0.4s ease 0s;
+    background-color: #fff;
+  }
+  .menu-categories__body._active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+}
+@media (min-width: 768.2px) {
+  .menu-categories__top {
+    display: none;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__top {
+    padding: 0px 15px;
+    width: 100vw;
+    /* Если меньше контейнера */
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    overflow-y: 0;
+    border: 1px solid rgb(238, 238, 238);
+    background-color: #fff;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .menu-categories__top {
+    min-height: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.menu-categories__title {
+  font-family: "Cerebri Sans Pro";
+  font-weight: 600;
+  font-size: 18px;
+  color: #2A2A2A;
+}
+.menu-categories__close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.menu-categories__close span {
+  width: 20px;
+  height: 2px;
+  display: flex;
+  position: relative;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: transparent;
+}
+.menu-categories__close span:before, .menu-categories__close span:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  transition: top 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  background-color: #2A2A2A;
+}
+.menu-categories__close span:before {
+  top: -8px;
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.menu-categories__close span:after {
+  top: 8px;
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+.menu-categories__list {
+  width: 100%;
+}
+.menu-categories__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768.2px) {
+  .menu-categories__item:hover .menu-categories__sub-body {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .menu-categories__item:hover .menu-categories__link {
+    background-color: rgba(245, 252, 245, 0.781);
+    color: #7FAD39;
+  }
+  .menu-categories__item:hover .menu-categories__arrow {
+    color: #7FAD39;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__item._active .menu-categories__sub-body {
+    display: flex;
+  }
+}
+@media (any-hover: hover) {
+  .menu-categories__item {
+    transition: color 0.2s ease 0s;
+  }
+}
+.menu-categories__link {
+  padding: 10px 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.2s ease 0s;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 118.75%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .menu-categories__link {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .menu-categories__link {
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s;
+  }
+}
+.menu-categories__link-item {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768.2px) {
+  .menu-categories__icon {
+    margin-right: 10px;
+    flex: 0 1 20px;
+  }
+  .menu-categories__icon img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__icon {
+    margin-right: 10px;
+    flex: 0 1 25px;
+  }
+  .menu-categories__icon img {
+    max-width: 100%;
+  }
+}
+.menu-categories__arrow {
+  font-size: 10px;
+}
+@media (any-hover: hover) {
+  .menu-categories__arrow {
+    transition: color 0.2s ease 0s;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__arrow {
+    font-size: 12px;
+  }
+}
+@media (any-hover: hover) {
+  .menu-categories__sub-body {
+    transition: opacity 0.2s ease 0s;
+  }
+}
+@media (min-width: 768.2px) {
+  .menu-categories__sub-body {
+    max-width: 350px;
+    min-width: 240px;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    pointer-events: none;
+    opacity: 0;
+    border: 1px solid rgb(238, 238, 238);
+    background-color: #fff;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-categories__sub-body {
+    /* Если меньше контейнера */
+    margin-top: 80px;
+    width: 100vw;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .menu-categories__sub-body {
+    margin-top: calc(60px + 20 * ((100vw - 320px) / 880));
+  }
+}
+
+@media (min-width: 768.2px) {
+  .menu-categories-sub__top {
+    display: none;
+  }
+}
+.menu-categories-sub__back {
+  padding: 15px;
+  /* Если меньше контейнера */
+  max-width: 200px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  font-family: "Cerebri Sans Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .menu-categories-sub__back {
+    max-width: calc(100px + 100 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 768.2px) {
+  .menu-categories-sub__back {
+    display: none;
+  }
+}
+.menu-categories-sub__back ._icon-arrow {
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+  transform: rotate(180deg);
+  font-size: 12px;
+}
+.menu-categories-sub__list {
+  display: flex;
+  flex-direction: column;
+}
+.menu-categories-sub__item {
+  padding: 10px 15px;
+  width: 100%;
+  display: block;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 118.75%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .menu-categories-sub__item {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .menu-categories-sub__item {
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s;
+  }
+  .menu-categories-sub__item:hover {
+    background-color: rgba(245, 252, 245, 0.781);
+    color: #7FAD39;
+  }
+}
+
+.menu-items__list {
+  row-gap: 15px;
+  /* Если меньше контейнера */
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .menu-items__list {
+    -moz-column-gap: calc(15px + 25 * ((100vw - 320px) / 880));
+         column-gap: calc(15px + 25 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-items__list {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-items__link {
+    padding: 0px 15px;
+    width: 100%;
+  }
+}
+.menu-items__link a {
+  text-transform: uppercase;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 118.75%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .menu-items__link a {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .menu-items__link a {
+    padding: 8px 0px;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .menu-items__link a:after {
+    content: "›";
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+  }
+}
+@media (any-hover: hover) {
+  .menu-items__link a {
+    transition: color 0.2s ease 0s;
+  }
+  .menu-items__link a:hover {
+    color: #7FAD39;
+  }
+}
+.menu-items__link._active a {
+  font-weight: 600;
+  color: #7FAD39;
+}
+
+.menu-cart__icon {
+  font-size: 20px;
+}
+.menu-cart__text {
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 125%;
+  color: #fff;
+}
+@media (max-width: 768.2px) {
+  .menu-cart__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2A2A2A;
+  }
+}
+.menu-cart__arrow {
+  font-size: 6px;
+}
+
+.footer {
+  overflow: hidden;
+}
+.footer__wrapper {
+  background-color: #191919;
+}
+.footer__body {
+  /* Если меньше контейнера */
+  padding-top: 60px;
+  /* Если меньше контейнера */
+  padding-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .footer__body {
+    padding-top: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer__body {
+    padding-bottom: calc(20px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.footer__content {
+  /* Если меньше контейнера */
+  row-gap: 30px;
+  /* Если меньше контейнера */
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .footer__content {
+    row-gap: calc(25px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer__content {
+    -moz-column-gap: calc(15px + 5 * ((100vw - 320px) / 880));
+         column-gap: calc(15px + 5 * ((100vw - 320px) / 880));
+  }
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer__action {
+  /* Если меньше контейнера */
+  row-gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .footer__action {
+    row-gap: calc(30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+.footer__download {
+  display: flex;
+  flex-direction: column;
+}
+.footer__copy {
+  /* Если меньше контейнера */
+  margin-top: 100px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 185.7142857143%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer__copy {
+    margin-top: calc(40px + 60 * ((100vw - 320px) / 880));
+  }
+}
+
+.footer-contact__logo {
+  /* Если меньше контейнера */
+  margin-bottom: 40px;
+  display: inline-flex;
+}
+@media (max-width: 1200px) {
+  .footer-contact__logo {
+    margin-bottom: calc(25px + 15 * ((100vw - 320px) / 880));
+  }
+}
+.footer-contact__item {
+  display: inline-flex;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 214.2857142857%;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .footer-contact__item {
+    transition: color 0.2s ease 0s;
+  }
+  .footer-contact__item:hover {
+    color: rgb(201, 201, 201);
+  }
+}
+.footer-column__body {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-column__title {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 187.5%;
+  color: #fff;
+}
+.footer-column__sub-list {
+  flex: 1 1 auto;
+}
+.footer-column__sub-item a {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 214.2857142857%;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .footer-column__sub-item a {
+    transition: color 0.2s ease 0s;
+  }
+  .footer-column__sub-item a:hover {
+    color: rgb(201, 201, 201);
+  }
+}
+
+.footer-download__title {
+  /* Если меньше контейнера */
+  margin-bottom: 20px;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer-download__title {
+    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer-download__title {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.footer-download__items {
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-download__card {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 0;
+  /* Если меньше контейнера */
+  flex-basis: 200px;
+}
+@media (max-width: 1200px) {
+  .footer-download__card {
+    flex-basis: calc(150px + 50 * ((100vw - 320px) / 880));
+  }
+}
+.footer-download__card img {
+  max-width: 100%;
+}
+
+.footer-subscribe__title {
+  /* Если меньше контейнера */
+  margin-bottom: 20px;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__title {
+    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__title {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.footer-subscribe__form {
+  max-width: 630px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer-subscribe__input {
+  padding: 0px 15px;
+  width: 100%;
+  /* Если меньше контейнера */
+  height: 60px;
+  background-color: #fff;
+  font-family: "Cerebri Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.4285714286%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__input {
+    height: calc(45px + 15 * ((100vw - 320px) / 880));
+  }
+}
+.footer-subscribe__input::-moz-placeholder {
+  text-transform: capitalize;
+  font-family: "Cerebri Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.4285714286%;
+  color: #757575;
+}
+.footer-subscribe__input:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Cerebri Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.4285714286%;
+  color: #757575;
+}
+.footer-subscribe__input::placeholder {
+  text-transform: capitalize;
+  font-family: "Cerebri Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.4285714286%;
+  color: #757575;
+}
+.footer-subscribe__send {
+  /* Если меньше контейнера */
+  padding-right: 30px;
+  /* Если меньше контейнера */
+  padding-left: 30px;
+  /* Если меньше контейнера */
+  height: 60px;
+  background-color: #7FAD39;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 121.4285714286%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__send {
+    padding-right: calc(15px + 15 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__send {
+    padding-left: calc(15px + 15 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__send {
+    height: calc(45px + 15 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer-subscribe__send {
+    font-size: calc(13px + 1 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .footer-subscribe__send {
+    transition: background-color 0.2s ease 0s;
+  }
+  .footer-subscribe__send:hover {
+    background-color: #98c751;
+  }
+}
+
+.footer-payment__title {
+  /* Если меньше контейнера */
+  margin-bottom: 20px;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer-payment__title {
+    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer-payment__title {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.footer-payment__list {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer-payment__item img {
+  max-width: 100%;
+}
+
+.page__sale {
+  overflow: hidden;
+}
+.page__cetegiries {
+  overflow: hidden;
+}
+.page__products {
+  overflow: hidden;
+}
+.page__products.last .products__container {
+  /* Если меньше контейнера */
+  padding-bottom: 160px;
+}
+@media (max-width: 1200px) {
+  .page__products.last .products__container {
+    padding-bottom: calc(60px + 100 * ((100vw - 320px) / 880));
+  }
+}
+.page__value {
+  overflow: hidden;
+}
+
+.sale__container {
+  padding: 0px;
+  max-width: 1920px;
+}
+.sale__body {
+  /* Если меньше контейнера */
+  padding-top: 40px;
+  /* Если меньше контейнера */
+  padding-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .sale__body {
+    padding-top: calc(15px + 25 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale__body {
+    padding-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.sale__slider.swiper {
+  padding: 0px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sale-slider__wrapper.swiper-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+.sale-slider__slide.swiper-slide {
+  /* Если меньше контейнера */
+  padding-right: 20px;
+  /* Если меньше контейнера */
+  padding-bottom: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  position: relative;
+  overflow: hidden;
+  border: 6px solid #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1200px) {
+  .sale-slider__slide.swiper-slide {
+    padding-right: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale-slider__slide.swiper-slide {
+    padding-bottom: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .sale-slider__slide.swiper-slide .sale-slider__image img {
+    transition: transform 0.3s ease 0s;
+  }
+  .sale-slider__slide.swiper-slide:hover .sale-slider__image img {
+    transform: scale(1.1);
+  }
+}
+.sale-slider__image {
+  padding-bottom: 4%;
+}
+.sale-slider__image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sale-slider__item {
+  /* Если меньше контейнера */
+  padding: 18px;
+  /* Если меньше контейнера */
+  margin-bottom: 40px;
+  /* Если меньше контейнера */
+  max-width: 225px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+@media (max-width: 1200px) {
+  .sale-slider__item {
+    padding: calc(12px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale-slider__item {
+    margin-bottom: calc(20px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale-slider__item {
+    max-width: calc(160px + 65 * ((100vw - 320px) / 880));
+  }
+}
+.sale-slider__precent {
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 171.4285714286%;
+  color: #7FAD39;
+}
+@media (max-width: 1200px) {
+  .sale-slider__precent {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .sale-slider__precent {
+    font-weight: 700;
+  }
+}
+.sale-slider__buy-more {
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 150%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .sale-slider__buy-more {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .sale-slider__buy-more {
+    font-weight: 600;
+  }
+}
+.sale-slider__name {
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #A9A9A9;
+}
+@media (max-width: 1200px) {
+  .sale-slider__name {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .sale-slider__name {
+    font-weight: 400;
+  }
+}
+.sale-slider__btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.sale-slider__btn {
+  /* Если меньше контейнера */
+  padding-right: 20px;
+  /* Если меньше контейнера */
+  padding-left: 20px;
+  /* Если меньше контейнера */
+  min-height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7FAD39;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 121.4285714286%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .sale-slider__btn {
+    padding-right: calc(15px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale-slider__btn {
+    padding-left: calc(15px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale-slider__btn {
+    min-height: calc(40px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .sale-slider__btn {
+    font-size: calc(13px + 1 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .sale-slider__btn {
+    transition: background-color 0.2s ease 0s;
+  }
+  .sale-slider__btn:hover {
+    background-color: #98c751;
+  }
+}
+@media (max-width: 768.2px) {
+  .sale-slider__btn {
+    font-weight: 600;
+  }
+}
+.sale-slider__arrow.swiper-button-prev, .sale-slider__arrow.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  border: 2px solid #E6E6E6;
+  background-color: #fff;
+  font-size: 10px;
+  color: #2A2A2A;
+}
+.sale-slider__arrow.swiper-button-prev.swiper-button-prev, .sale-slider__arrow.swiper-button-next.swiper-button-prev {
+  left: 2px;
+}
+.sale-slider__arrow.swiper-button-prev.swiper-button-prev ._icon-arrow, .sale-slider__arrow.swiper-button-next.swiper-button-prev ._icon-arrow {
+  transform: rotate(180deg);
+}
+.sale-slider__arrow.swiper-button-prev.swiper-button-next, .sale-slider__arrow.swiper-button-next.swiper-button-next {
+  right: 2px;
+}
+.sale-slider__arrow.swiper-button-prev:after, .sale-slider__arrow.swiper-button-next:after {
+  display: none;
+}
+@media (any-hover: hover) {
+  .sale-slider__arrow.swiper-button-prev, .sale-slider__arrow.swiper-button-next {
+    transition: background-color 0.2s ease 0s;
+  }
+  .sale-slider__arrow.swiper-button-prev:hover, .sale-slider__arrow.swiper-button-next:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.cetegiries__container {
+  padding: 0;
+}
+.cetegiries__body {
+  /* Если меньше контейнера */
+  padding-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .cetegiries__body {
+    padding-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.cetegiries__item {
+  padding: 0px 15px;
+  /* Если меньше контейнера */
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .cetegiries__item {
+    margin-bottom: calc(15px + 25 * ((100vw - 320px) / 880));
+  }
+}
+.cetegiries__slider.swiper {
+  padding: 0px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cetegiries-slider__wrapper.swiper-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+.cetegiries-slider__slide.swiper-slide {
+  /* Если меньше контейнера */
+  padding-top: 18px;
+  /* Если меньше контейнера */
+  padding-right: 15px;
+  /* Если меньше контейнера */
+  padding-left: 15px;
+  /* Если меньше контейнера */
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgba(42, 42, 42, 0.15);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__slide.swiper-slide {
+    padding-top: calc(8px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__slide.swiper-slide {
+    padding-right: calc(5px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__slide.swiper-slide {
+    padding-left: calc(5px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__slide.swiper-slide {
+    padding-bottom: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .cetegiries-slider__slide.swiper-slide {
+    transition: background-color 0.2s ease 0s;
+  }
+  .cetegiries-slider__slide.swiper-slide:hover {
+    background-color: rgb(233, 255, 232);
+  }
+  .cetegiries-slider__slide.swiper-slide:hover .cetegiries-slider__title {
+    color: #7FAD39;
+  }
+}
+.cetegiries-slider__icon {
+  /* Если меньше контейнера */
+  margin-bottom: 14px;
+  /* Если меньше контейнера */
+  max-width: 60px;
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__icon {
+    margin-bottom: calc(8px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__icon {
+    max-width: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.cetegiries-slider__icon img {
+  max-width: 100%;
+}
+.cetegiries-slider__title {
+  transition: color 0.2s ease 0s;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 171.4285714286%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .cetegiries-slider__title {
+    font-size: calc(10px + 4 * ((100vw - 320px) / 880));
+  }
+}
+.cetegiries-slider__arrow.swiper-button-prev, .cetegiries-slider__arrow.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #E6E6E6;
+  background-color: #fff;
+  font-size: 10px;
+  color: #2A2A2A;
+}
+.cetegiries-slider__arrow.swiper-button-prev.swiper-button-prev, .cetegiries-slider__arrow.swiper-button-next.swiper-button-prev {
+  left: 0px;
+}
+.cetegiries-slider__arrow.swiper-button-prev.swiper-button-prev ._icon-arrow, .cetegiries-slider__arrow.swiper-button-next.swiper-button-prev ._icon-arrow {
+  transform: rotate(180deg);
+}
+.cetegiries-slider__arrow.swiper-button-prev.swiper-button-next, .cetegiries-slider__arrow.swiper-button-next.swiper-button-next {
+  right: 0px;
+}
+.cetegiries-slider__arrow.swiper-button-prev:after, .cetegiries-slider__arrow.swiper-button-next:after {
+  display: none;
+}
+@media (any-hover: hover) {
+  .cetegiries-slider__arrow.swiper-button-prev, .cetegiries-slider__arrow.swiper-button-next {
+    transition: background-color 0.2s ease 0s;
+  }
+  .cetegiries-slider__arrow.swiper-button-prev:hover, .cetegiries-slider__arrow.swiper-button-next:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.products__container {
+  padding: 0px;
+}
+.products__body {
+  /* Если меньше контейнера */
+  padding-bottom: 45px;
+}
+@media (max-width: 1200px) {
+  .products__body {
+    padding-bottom: calc(25px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.products__item {
+  padding: 0px 15px;
+  /* Если меньше контейнера */
+  margin-bottom: 25px;
+}
+@media (max-width: 1200px) {
+  .products__item {
+    margin-bottom: calc(0px + 25 * ((100vw - 320px) / 880));
+  }
+}
+.products__slider.swiper {
+  padding: 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-slider__wrapper.swiper-wrapper {
+  display: inline-flex;
+}
+.products-slider__item.swiper-slide {
+  /* Если меньше контейнера */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+@media (max-width: 1200px) {
+  .products-slider__item.swiper-slide {
+    padding: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .products-slider__item.swiper-slide {
+    transition: box-shadow 0.2s ease 0s;
+  }
+  .products-slider__item.swiper-slide:hover {
+    box-shadow: 0px 0px 12px 4px rgba(88, 88, 88, 0.2);
+  }
+}
+.products-slider__arrow.swiper-button-prev, .products-slider__arrow.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #E6E6E6;
+  background-color: #fff;
+  font-size: 10px;
+  color: #2A2A2A;
+}
+.products-slider__arrow.swiper-button-prev.swiper-button-prev, .products-slider__arrow.swiper-button-next.swiper-button-prev {
+  left: 0px;
+}
+.products-slider__arrow.swiper-button-prev.swiper-button-prev ._icon-arrow, .products-slider__arrow.swiper-button-next.swiper-button-prev ._icon-arrow {
+  transform: rotate(180deg);
+}
+.products-slider__arrow.swiper-button-prev.swiper-button-next, .products-slider__arrow.swiper-button-next.swiper-button-next {
+  right: 0px;
+}
+.products-slider__arrow.swiper-button-prev.swiper-button-disabled, .products-slider__arrow.swiper-button-next.swiper-button-disabled {
+  pointer-events: auto;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+.products-slider__arrow.swiper-button-prev:after, .products-slider__arrow.swiper-button-next:after {
+  display: none;
+}
+@media (any-hover: hover) {
+  .products-slider__arrow.swiper-button-prev, .products-slider__arrow.swiper-button-next {
+    transition: background-color 0.2s ease 0s;
+  }
+  .products-slider__arrow.swiper-button-prev:hover, .products-slider__arrow.swiper-button-next:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.products-slider-item__top {
+  /* Если меньше контейнера */
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  .products-slider-item__top {
+    margin-bottom: calc(5px + 3 * ((100vw - 320px) / 880));
+  }
+}
+.products-slider-item__label {
+  margin-right: 15px;
+  padding: 6px 7px;
+  background-color: #7FAD39;
+  font-family: "Cerebri Sans Pro";
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 183.3333333333%;
+  color: #fff;
+}
+@media (max-width: 768.2px) {
+  .products-slider-item__label {
+    font-weight: 600;
+  }
+}
+.products-slider-item__favorites {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+  background-color: #D8E6C3;
+}
+@media (any-hover: hover) {
+  .products-slider-item__favorites:hover {
+    background-color: #caddae;
+  }
+}
+.products-slider-item__favorites._icon-favorites {
+  font-size: 16px;
+  color: #7FAD39;
+}
+.products-slider-item__favorites._active {
+  background-color: #e2544c;
+  color: #fff;
+}
+.products-slider-item__image {
+  overflow: hidden;
+}
+@media (any-hover: hover) {
+  .products-slider-item__image img {
+    transition: transform 0.2s ease 0s;
+  }
+  .products-slider-item__image:hover img {
+    transform: scale(1.1);
+  }
+}
+.products-slider-item__image img {
+  max-width: 100%;
+}
+.products-slider-item__text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  text-align: center;
+}
+.products-slider-item__quality {
+  flex: 1 1 auto;
+  font-family: Cerebri Sans Pro;
+  /* Если меньше контейнера */
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 137.5%;
+  color: #A9A9A9;
+}
+@media (max-width: 1200px) {
+  .products-slider-item__quality {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.products-slider-item__name {
+  /* Если меньше контейнера */
+  margin-bottom: 15px;
+  flex: 1 1 auto;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 137.5%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .products-slider-item__name {
+    margin-bottom: calc(10px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .products-slider-item__name {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .products-slider-item__name {
+    transition: color 0.2s ease 0s;
+  }
+  .products-slider-item__name:hover {
+    color: #7FAD39;
+  }
+}
+@media (max-width: 768.2px) {
+  .products-slider-item__name {
+    font-weight: 700;
+  }
+}
+.products-slider-item__price {
+  /* Если меньше контейнера */
+  margin-bottom: 25px;
+  display: flex;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 137.5%;
+  color: #7FAD39;
+}
+@media (max-width: 1200px) {
+  .products-slider-item__price {
+    margin-bottom: calc(15px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .products-slider-item__price {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+.products-slider-item__price .delete {
+  margin-left: 5px;
+  text-decoration: line-through;
+  color: #A9A9A9;
+}
+.products-slider-item__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-slider-item__quantity {
+  display: flex;
+  align-items: center;
+}
+.products-slider-item__basket {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  /* Если меньше контейнера */
+  font-size: 20px;
+  color: #A9A9A9;
+}
+@media (any-hover: hover) {
+  .products-slider-item__basket {
+    transition: background-color 0.2s ease 0s;
+  }
+  .products-slider-item__basket:hover {
+    background-color: rgb(238, 238, 238);
+  }
+}
+@media (max-width: 1200px) {
+  .products-slider-item__basket {
+    font-size: calc(15px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+.products-slider-quantity__minus {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #2A2A2A;
+  font-size: 26px;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .products-slider-quantity__minus {
+    transition: background-color 0.2s ease 0s;
+  }
+  .products-slider-quantity__minus:hover {
+    background-color: #353535;
+  }
+}
+.products-slider-quantity__input {
+  width: 25px;
+  display: flex;
+  pointer-events: none;
+  text-align: center;
+}
+.products-slider-quantity__plus {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #2A2A2A;
+  font-size: 26px;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .products-slider-quantity__plus {
+    transition: background-color 0.2s ease 0s;
+  }
+  .products-slider-quantity__plus:hover {
+    background-color: #353535;
+  }
+}
+
+.value__body {
+  /* Если меньше контейнера */
+  padding-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .value__body {
+    padding-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.value__item {
+  /* Если меньше контейнера */
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .value__item {
+    margin-bottom: calc(15px + 25 * ((100vw - 320px) / 880));
+  }
+}
+.value__column {
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (min-width: 768.2px) {
+  .value__column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768.2px) {
+  .value__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.value-column__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768.2px) {
+  .value-column__item {
+    max-width: 552.2px;
+  }
+}
+@media (any-hover: hover) {
+  .value-column__item_little .value-column-little__image img {
+    transition: transform 0.3s ease 0s;
+  }
+  .value-column__item_little:hover .value-column-little__image img {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 768.2px) {
+  .value-column__item_big {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column__item_big {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+@media (any-hover: hover) {
+  .value-column__item_big .value-column-big__image img {
+    transition: transform 0.3s ease 0s;
+  }
+  .value-column__item_big:hover .value-column-big__image img {
+    transform: scale(1.1);
+  }
+}
+
+.value-column-little__image {
+  padding-bottom: 76.5%;
+}
+@media (max-width: 768.2px) {
+  .value-column-little__image {
+    padding-bottom: 66.5%;
+  }
+}
+.value-column-little__body {
+  /* Если меньше контейнера */
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+@media (max-width: 1200px) {
+  .value-column-little__body {
+    padding: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-little__body {
+    /* Если меньше контейнера */
+    padding: 25px;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .value-column-little__body {
+    padding: calc(15px + 10 * ((100vw - 320px) / 880));
+  }
+}
+.value-column-little__title {
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 121.4285714286%;
+  color: #2A2A2A;
+}
+@media (max-width: 1200px) {
+  .value-column-little__title {
+    font-size: calc(18px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 768.2px) {
+  .value-column-little__title {
+    /* Если меньше контейнера */
+    max-width: 150px;
+  }
+}
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .value-column-little__title {
+    max-width: calc(250px + -100 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-little__title {
+    max-width: 150px;
+    /* Если меньше контейнера */
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .value-column-little__title {
+    font-size: calc(22px + 6 * ((100vw - 320px) / 880));
+  }
+}
+.value-column-little__text {
+  /* Если меньше контейнера */
+  margin-bottom: 30px;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 121.4285714286%;
+}
+@media (max-width: 1200px) {
+  .value-column-little__text {
+    margin-bottom: calc(15px + 15 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .value-column-little__text {
+    font-size: calc(14px + 14 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 768.2px) {
+  .value-column-little__text {
+    /* Если меньше контейнера */
+    max-width: 150px;
+  }
+}
+@media (min-width: 768.2px) and (max-width: 1200px) {
+  .value-column-little__text {
+    max-width: calc(250px + -100 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-little__text {
+    max-width: 150px;
+    /* Если меньше контейнера */
+    font-size: 28px;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .value-column-little__text {
+    font-size: calc(18px + 10 * ((100vw - 320px) / 880));
+  }
+}
+.value-column-little__btn {
+  /* Если меньше контейнера */
+  padding-top: 18px;
+  /* Если меньше контейнера */
+  padding-right: 20px;
+  /* Если меньше контейнера */
+  padding-left: 20px;
+  /* Если меньше контейнера */
+  padding-bottom: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A2A2A;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 118.75%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .value-column-little__btn {
+    padding-top: calc(10px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .value-column-little__btn {
+    padding-right: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .value-column-little__btn {
+    padding-left: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .value-column-little__btn {
+    padding-bottom: calc(10px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .value-column-little__btn {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .value-column-little__btn {
+    transition: background-color 0.2s ease 0s;
+  }
+  .value-column-little__btn:hover {
+    background-color: #3b3b3b;
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-little__btn {
+    font-weight: 600;
+  }
+}
+
+.value-column-big__image {
+  padding-bottom: 12%;
+}
+.value-column-big__image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(42, 42, 42, 0.32);
+}
+@media (max-width: 768.2px) {
+  .value-column-big__image {
+    padding-bottom: 22%;
+  }
+}
+@media (max-width: 500.2px) {
+  .value-column-big__image {
+    padding-bottom: 32%;
+  }
+}
+@media (max-width: 375.2px) {
+  .value-column-big__image {
+    padding-bottom: 42%;
+  }
+}
+.value-column-big__body {
+  /* Если меньше контейнера */
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+@media (max-width: 1200px) {
+  .value-column-big__body {
+    padding: calc(10px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1024.2px) {
+  .value-column-big__body {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-big__body {
+    flex-direction: column;
+  }
+}
+.value-column-big__title {
+  text-align: center;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 141.6666666667%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .value-column-big__title {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media (min-width: 1024.2px) {
+  .value-column-big__title {
+    /* Если меньше контейнера */
+    margin-bottom: 23px;
+  }
+}
+@media (min-width: 1024.2px) and (max-width: 1200px) {
+  .value-column-big__title {
+    margin-bottom: calc(5px + 18 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1024.2px) {
+  .value-column-big__title {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-big__title {
+    /* Если меньше контейнера */
+    margin-bottom: 23px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 768.2px) and (max-width: 1200px) {
+  .value-column-big__title {
+    margin-bottom: calc(10px + 13 * ((100vw - 320px) / 880));
+  }
+}
+.value-column-big__btn {
+  padding: 0px 14px;
+  background-color: rgba(127, 173, 57, 0.7);
+  border: 2px dashed #fff;
+  white-space: nowrap;
+  font-family: "Cerebri Sans Pro";
+  /* Если меньше контейнера */
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 242.8571428571%;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .value-column-big__btn {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 880));
+  }
+}
+@media (any-hover: hover) {
+  .value-column-big__btn {
+    transition: background-color 0.2s ease 0s;
+  }
+  .value-column-big__btn:hover {
+    background-color: rgba(127, 173, 57, 0.8);
+  }
+}
+@media (max-width: 768.2px) {
+  .value-column-big__btn {
+    font-weight: 600;
+  }
+}
+
+.page {
+  flex: 1 1 auto;
+}
