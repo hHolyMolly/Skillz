@@ -1,1 +1,2 @@
 
+export function scrollTo(){const anchors=document.querySelectorAll('.scroll-to[href*="#"]');anchors.forEach((anchor)=>{anchor.addEventListener("click",(e)=>{e.preventDefault();const blockID=anchor.getAttribute("href").substring(1);const section=document.getElementById(blockID);if(section){const topOffset=140;const elementPosition=section.getBoundingClientRect().top;window.scrollBy({top:elementPosition-topOffset,behavior:"smooth",});}});});}
