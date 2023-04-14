@@ -1,2 +1,2 @@
 
-import burger from"./modules/chunks/burger.js";burger();import"./modules/chunks/swiper.js";import preloader from"./modules/chunks/preloader.js";const preloaderSpeed=500;preloader(preloaderSpeed);
+import burger from"./modules/chunks/burger.js";burger();import"./modules/chunks/swiper.js";import spollers from"./modules/chunks/spollers.js";const spollersSpeed=500;spollers(spollersSpeed);import preloader from"./modules/chunks/preloader.js";const preloaderSpeed=500;preloader(preloaderSpeed);
