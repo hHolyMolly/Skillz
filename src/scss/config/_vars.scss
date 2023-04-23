@@ -1,0 +1,32 @@
+//< " ПЕРЕМЕННЫЕ " >=============================================================================================================>//
+
+// ОБЩИЕ НАСТРОЙКИ СТРАНИЦЫ
+$minWidth: 320;
+$maxWidth: 1440;
+$maxWidthContainer: 1280;
+$containerPadding: 30;
+
+:root {
+   // БРЕЙКПОИНТЫ
+   --header-mobile: 991.98px;
+
+   // ЦВЕТА
+   --color-white: #ffffff;
+   --color-dark: #1c1c33;
+   --color-dark-hover: #32324d;
+
+   --color-green: #57d9a6;
+   --color-green-hover: #48ca96;
+   --color-red: #fc5468;
+
+   --color-text-light: #f6f6f8;
+   --color-text-dark: #4e4e65;
+
+   --color-wrapper: rgba(0, 0, 0, 0.6);
+
+   --background-middle: #23233b;
+   --background-grey: #f5f5f5;
+
+   --background-page: var(--background-middle);
+   --font-family: "Source Sans Pro";
+}

@@ -1,0 +1,22 @@
+.popup-complete {
+   // .popup-complete__title
+
+   &__title {
+      text-align: center;
+      @include adaptiv-value("font-size", 34, 26, 1);
+      color: var(--color-dark);
+      line-height: calc(38 / 26 * 100%);
+
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+
+   // .popup-complete__text
+
+   &__text {
+      text-align: center;
+      @include adaptiv-value("font-size", 18, 16, 1);
+      color: var(--color-text-dark);
+   }
+}

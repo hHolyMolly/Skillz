@@ -1,0 +1,80 @@
+.contact {
+   display: flex;
+   background-color: var(--color-dark);
+
+   @media (min-width: 649.98px) {
+      align-items: center;
+   }
+
+   @media (max-width: 649.98px) {
+      flex-direction: column-reverse;
+   }
+
+   // .contact__image
+
+   &__image {
+      img {
+         max-width: 100%;
+      }
+
+      @media (min-width: 649.98px) {
+         flex: 0 0 50%;
+
+         text-align: right;
+
+         &:not(:last-child) {
+            @include adaptiv-value("margin-right", 50, 10, 1);
+         }
+      }
+   }
+
+   // .contact__content
+
+   &__content {
+      @media (min-width: 649.98px) {
+         padding: 40px 0px;
+         flex: 0 0 100%;
+         transform: translateX(-50%);
+      }
+
+      @media (max-width: 649.98px) {
+         padding-top: 30px;
+         @include adaptiv-value("margin-bottom", 60, 30, 1);
+      }
+   }
+
+   // .contact__body
+
+   &__body {
+      @media (min-width: 649.98px) {
+         @include adaptiv-value("padding-right", 50, 10, 1);
+         margin-left: auto;
+         width: 50%;
+      }
+   }
+
+   // .contact__title
+
+   &__title {
+      &:not(:last-child) {
+         @include adaptiv-value("margin-bottom", 70, 40, 1);
+      }
+
+      &:after {
+         @include adaptiv-value("width", 150, 100, 1);
+      }
+   }
+
+   // .contact__text
+
+   &__text {
+      &:not(:last-child) {
+         @include adaptiv-value("margin-bottom", 45, 20, 1);
+      }
+   }
+
+   // .contact__button
+
+   &__button {
+   }
+}
