@@ -1,0 +1,32 @@
+{
+   "name": "gulp-template",
+   "homepage": "https://hholymolly.github.io/Skillz/",
+   "version": "1.0.0",
+   "description": "gulp template for work",
+   "main": "gulpfile.js",
+   "type": "module",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "gulp developer",
+      "build": "gulp build",
+      "deploy": "gh-pages -d build -r https://github.com/hHolyMolly/Skillz",
+      "predeploy": "npm run build"
+   },
+   "author": "HolyMolly",
+   "license": "ISC",
+   "dependencies": {
+      "browser-sync": "^2.29.1",
+      "gh-pages": "^5.0.0",
+      "gulp": "^4.0.2",
+      "gulp-clean": "^0.4.0",
+      "gulp-csso": "^4.0.1",
+      "gulp-html-import": "^0.0.2",
+      "gulp-htmlmin": "^5.0.1",
+      "gulp-imagemin": "^8.0.0",
+      "gulp-jsmin": "^0.1.5",
+      "gulp-newer": "^1.4.0",
+      "gulp-sass": "^5.1.0",
+      "gulp-webp": "^4.0.1",
+      "sass": "^1.61.0"
+   }
+}
