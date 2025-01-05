@@ -1,18 +1,4 @@
-# Верстка лендинга с анимацией при прокрутке страницы, приложение собрано на сборке Gulp, весь код и изображения сжаты. Google Speed = 99%
+![Preview](https://github.com/hHolyMolly/Skillz/blob/main/src/img/Preview.png)
 
-![](./src/assets/preview.jpg)
-
-### Используемый стек технологий:
-
-- HTML;
-- CSS;
-- JavaScript;
-- Gulp;
-- Препроцессор SASS (SCSS);
-- Анимация при прокрутке - Wow.js;
-- Работа с сервером, отправка формы с электронной почтой пользователя;
-- Слайдер - Swiper;
-- Резиновый адаптив;
-- Бэм.
-
-
+# Description:
+A responsive website with scroll animations, built with Gulp, focused on speed and performance. All files are minified, and images are in WEBP format for faster loading. Google PageSpeed score: 99%. Features include smooth scroll animations (Wow.js), fully responsive design, form submission with email integration, interactive sliders (Swiper), and BEM + SASS for scalability. Optimized for mobile and desktop with high performance and user-friendly interactions.
